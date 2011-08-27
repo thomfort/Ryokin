@@ -10,14 +10,12 @@ namespace :scrapper do
     end
     
     # Task order list
-    task :load_all => [:closed_fixed]
+    task :load_all => [:desj_hypo_closed_fixed]
     
     desc 'load data from the RSS'
-    task :closed_fixed => :environment do
-
+    task :desj_hypo_closed_fixed => :environment do
 
       # Get Rates of Desjardins
-      #!/usr/bin/env ruby
       require "rss/1.0"
       require "rss/2.0"
       require "open-uri"
@@ -66,15 +64,67 @@ namespace :scrapper do
 
 
           rate_type = RateType.create(:name => type_name, :nb_month => year)
-          category_rate_type = CategoryRateType.create(:category_id => cat_id, :rate_type => rate_type)
+          category_rate_type = CategoryRateType.create(:category_id => cat_id, :rate_type_id => rate_type.id)
           rate = Rate.create(:bank_id => 1, 
-                             :category_rate_type => category_rate_type, 
-                             :ratetype => rate_type,
-                             :rate => $3.to_f)
+                             :category_rate_type_id => category_rate_type.id, 
+                             :percent_rate => $3.to_f)
           
         end
       end
     end
+    task :bnc_hypo_closed do
+      # HFA = Hypotheque Closed
+      # HFA1  = 3 mois
+      # HFA2  = 6 mois
+      # HFA3  = 1 an
+      # HFA4  = 2 ans
+      # HFA5  = 3 ans
+      # HFA6  = 4 ans
+      # HFA7  = 5 ans
+      # HFA10 = 6 ans
+      # HFA8  = 7 ans
+      # HFA9  = 10 ans
+      h_conv = { 1 => 3, 2 => 6, 3 => 12, 4 => 24, 5 => 36, 6 => 48, 7 => 60, 10 => 72, 8 => 84, 9 => 120}
+
+      source = "http://www.bnc.ca/bnc/cda/javascript/allrates/0,2697,divId-2_langId-2_navCode-9020_navCodeExTh--1,00.js"
+
+      lines = open(source).read  
+      data = {}
+      type_name = "TauxFixeFerme";
+
+
+      lines.each do |line| 
+       line =~ /\baddRate\b\(\"HFA(.*)\"\,\"(.*)\"\,\".*\"\);/i
+       if $2 != nil    
+         # Verif if hypotheque exist
+         cat_id = verif_cat('hypotheque');
+
+         data[$1] = $2  
+         nb_month = h_conv[$1.to_i]
+
+         # Verif if rate_type is already exist
+         rate_type_exist = RateType.find(:first, :conditions => {:name => type_name, :nb_month => nb_month})
+         if !rate_type_exist               
+           # Save Rate Type
+           puts "Need #{nb_month}"
+           rate_type_id = saveRateType(type_name, nb_month)
+         else
+           rate_type_id = rate_type_exist.id
+         end        
+
+         # Save Rates
+         saveRates(rate_type_id, 3, cat_id, $2.to_f)
+
+       end 
+      end
+
+      # -- FOR TEST --
+      data.each do |k,v|
+        puts "#{h_conv[k.to_i]} -=> #{v}"
+      end
+    end
+    end
+    
   end
 end
 

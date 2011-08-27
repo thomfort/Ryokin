@@ -1,6 +1,6 @@
 class CreateCategoryRateTypes < ActiveRecord::Migration
   def self.up
-    create_table :categories_rate_types do |t|
+    create_table :category_rate_types do |t|
       t.integer :category_id, :nil => false
       t.integer :rate_type_id, :nil => false
       t.timestamps
@@ -8,6 +8,6 @@ class CreateCategoryRateTypes < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :categories_rate_types
+    drop_table :category_rate_types
   end
 end

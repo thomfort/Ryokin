@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(:version => 20110826020507) do
     t.datetime "updated_at"
   end
 
-  create_table "categories_rate_types", :force => true do |t|
+  create_table "category_rate_types", :force => true do |t|
     t.integer  "category_id"
     t.integer  "rate_type_id"
     t.datetime "created_at"
