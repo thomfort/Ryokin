@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  bank_id: 1
+  category_rate_type_id: 1
+  percent_rate: 9.99
+
+two:
+  bank_id: 1
+  category_rate_type_id: 1
+  percent_rate: 9.99

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @rate_type.name %>
+</p>
+
+<p>
+  <b>Nb month:</b>
+  <%= @rate_type.nb_month %>
+</p>
+
+
+<%= link_to 'Edit', edit_rate_type_path(@rate_type) %> |
+<%= link_to 'Back', rate_types_path %>
