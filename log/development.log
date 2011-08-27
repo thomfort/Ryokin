@@ -420,3 +420,54 @@ Started GET "/banks" for 127.0.0.1 at Fri Aug 26 21:10:07 -0400 2011
   [1m[36mBank Load (0.3ms)[0m  [1mSELECT `banks`.* FROM `banks`[0m
 Rendered banks/index.html.erb (9.1ms)
 Completed 200 OK in 19ms (Views: 15.6ms | ActiveRecord: 0.3ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+  [1m[36mSQL (10.8ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (56.6ms)[0m  CREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW KEYS FROM `schema_migrations`[0m
+  [1m[35mSQL (245.4ms)[0m  CREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)
+  [1m[36mSQL (0.3ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.7ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+Migrating to CreateBanks (20110826015420)
+  [1m[35mSQL (83.2ms)[0m  CREATE TABLE `banks` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `abbr` varchar(255), `logo_url` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110826015420')[0m
+Migrating to CreateRates (20110826020211)
+  [1m[35mSQL (124.1ms)[0m  CREATE TABLE `rates` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `bank_id` int(11), `category_rate_type_id` int(11), `percent_rate` decimal, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110826020211')[0m
+Migrating to CreateCategoryRateTypes (20110826020347)
+  [1m[35mSQL (106.0ms)[0m  CREATE TABLE `categories_rate_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `category_id` int(11), `rate_type_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (2.4ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110826020347')[0m
+Migrating to CreateRateTypes (20110826020428)
+  [1m[35mSQL (101.8ms)[0m  CREATE TABLE `rate_types` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `nb_month` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110826020428')[0m
+Migrating to CreateCategories (20110826020507)
+  [1m[35mSQL (98.9ms)[0m  CREATE TABLE `categories` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20110826020507')[0m
+  [1m[35mSQL (0.4ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.7ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.3ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.3ms)[0m  [1mdescribe `banks`[0m
+  [1m[35mSQL (7.5ms)[0m  SHOW KEYS FROM `banks`
+  [1m[36mSQL (1.3ms)[0m  [1mdescribe `categories`[0m
+  [1m[35mSQL (0.8ms)[0m  SHOW KEYS FROM `categories`
+  [1m[36mSQL (1.3ms)[0m  [1mdescribe `categories_rate_types`[0m
+  [1m[35mSQL (0.2ms)[0m  SHOW KEYS FROM `categories_rate_types`
+  [1m[36mSQL (1.9ms)[0m  [1mdescribe `rate_types`[0m
+  [1m[35mSQL (0.6ms)[0m  SHOW KEYS FROM `rate_types`
+  [1m[36mSQL (1.1ms)[0m  [1mdescribe `rates`[0m
+  [1m[35mSQL (1.8ms)[0m  SHOW KEYS FROM `rates`
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+  [1m[36mSQL (0.8ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.7ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.3ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations`[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (4.3ms)[0m  [1mdescribe `banks`[0m
+  [1m[35mAREL (0.4ms)[0m  INSERT INTO `banks` (`abbr`, `logo_url`, `updated_at`, `created_at`, `name`) VALUES (NULL, NULL, '2011-08-27 02:47:38', '2011-08-27 02:47:38', 'Desjardins')
+  [1m[36mSQL (26.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO `banks` (`abbr`, `logo_url`, `updated_at`, `created_at`, `name`) VALUES (NULL, NULL, '2011-08-27 02:47:38', '2011-08-27 02:47:38', 'ING')[0m
+  [1m[35mSQL (0.4ms)[0m  COMMIT
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+  [1m[36mBank Load (0.2ms)[0m  [1mSELECT `banks`.* FROM `banks`[0m
