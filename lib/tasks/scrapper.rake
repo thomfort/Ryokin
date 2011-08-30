@@ -1,3 +1,8 @@
+require "rss/1.0"
+require "rss/2.0"
+require 'net/http'
+require "open-uri"
+
 namespace :scrapper do 
   namespace :desjardins do
     
@@ -16,10 +21,6 @@ namespace :scrapper do
     task :desj_hypo_closed_fixed => :environment do
 
       # Get Rates of Desjardins
-      require "rss/1.0"
-      require "rss/2.0"
-      require "open-uri"
-      
       source ="http://rss.desjardins.com/TauxFixeFerme"
       content = ""
       type_name = "TauxFixeFerme";
@@ -72,7 +73,21 @@ namespace :scrapper do
         end
       end
     end
-    task :bnc_hypo_closed do
+    
+  end
+  
+  namespace :bnc do
+    
+    task :delete => :environment do
+      if RAILS_ENV == 'development' 
+        
+      else
+        puts "Task can only run in dev mode"
+      end      
+    end
+    
+    desc 'load data from JS file'
+    task :bnc_hypo_closed do      
       # HFA = Hypotheque Closed
       # HFA1  = 3 mois
       # HFA2  = 6 mois
@@ -91,31 +106,45 @@ namespace :scrapper do
       lines = open(source).read  
       data = {}
       type_name = "TauxFixeFerme";
-
+      
 
       lines.each do |line| 
-       line =~ /\baddRate\b\(\"HFA(.*)\"\,\"(.*)\"\,\".*\"\);/i
-       if $2 != nil    
-         # Verif if hypotheque exist
-         cat_id = verif_cat('hypotheque');
+        rates_ar = Rate.new
+        rate_type = RateType.new
+        cat_rate_type = CategoryRateType.new
+        
+        line =~ /\baddRate\b\(\"HFA(.*)\"\,\"(.*)\"\,\".*\"\);/i
+        if $2 != nil    
+          # Verif if hypotheque exist
+          name_cat = "hypotheque"
+          cat_hypotheque = Category.find(:first, :conditions => {:name => name_cat})
+          if !cat_hypotheque
+            cat = Category.new 
+            cat.name = name_cat
+            cat.save
+            cat_id = cat.id
+          else
+            cat_id = cat_hypotheque.id
+          end
+          #cat_id = verif_cat('hypotheque');
 
-         data[$1] = $2  
-         nb_month = h_conv[$1.to_i]
+          data[$1] = $2  
+          nb_month = h_conv[$1.to_i]
 
-         # Verif if rate_type is already exist
-         rate_type_exist = RateType.find(:first, :conditions => {:name => type_name, :nb_month => nb_month})
-         if !rate_type_exist               
-           # Save Rate Type
-           puts "Need #{nb_month}"
-           rate_type_id = saveRateType(type_name, nb_month)
-         else
-           rate_type_id = rate_type_exist.id
-         end        
+          # Verif if rate_type is already exist
+          rate_type_exist = RateType.find(:first, :conditions => {:name => type_name, :nb_month => nb_month})
+          if !rate_type_exist               
+            # Save Rate Type
+            puts "Need #{nb_month}"
+            rate_type_id = saveRateType(type_name, nb_month)
+          else
+            rate_type_id = rate_type_exist.id
+          end        
 
-         # Save Rates
-         saveRates(rate_type_id, 3, cat_id, $2.to_f)
+          # Save Rates
+          saveRates(rate_type_id, 3, cat_id, $2.to_f)
 
-       end 
+        end 
       end
 
       # -- FOR TEST --
@@ -123,8 +152,6 @@ namespace :scrapper do
         puts "#{h_conv[k.to_i]} -=> #{v}"
       end
     end
-    end
-    
   end
 end
 

@@ -1,0 +1,29 @@
+<%= form_for(@rate) do |f| %>
+  <% if @rate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rate.errors.count, "error") %> prohibited this rate from being saved:</h2>
+
+      <ul>
+      <% @rate.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field clearfix">
+    <%= f.label :bank_id %> 
+    <div class="input"><%= f.text_field :bank_id %></div>
+  </div>
+  <div class="field clearfix">
+    <%= f.label :category_rate_type_id %> 
+    <div class="input"><%= f.text_field :category_rate_type_id %></div>
+  </div>
+  <div class="field clearfix">
+    <%= f.label :percent_rate %> 
+    <div class="input"><%= f.text_field :percent_rate %></div>
+  </div>
+  <div class="actions">
+    <%= f.submit :class => 'btn primary' %>
+  </div>
+<% end %>
