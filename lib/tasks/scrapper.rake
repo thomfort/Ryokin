@@ -134,7 +134,6 @@ namespace :scrapper do
           rate_type_exist = RateType.find(:first, :conditions => {:name => type_name, :nb_month => nb_month})
           if !rate_type_exist               
             # Save Rate Type
-            puts "Need #{nb_month}"
             rate_type = RateType.new
             begin
               rate_type.name = type_name

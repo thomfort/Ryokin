@@ -1,0 +1,33 @@
+%h1
+  Listing rates
+
+%table
+  %thead
+    %tr
+      %th
+        Bank
+      %th
+        Category rate type
+      %th
+      %th
+      %th
+      %th
+  %tbody
+    - @rates.each do |rate| 
+      %tr
+        %td
+          = rate.bank_id
+        %td
+          = rate.category_rate_type_id
+        %td
+          = rate.percent_rate
+        %td
+          = link_to 'Show', rate
+        %td
+          = link_to 'Edit', edit_rate_path(rate)
+        %td
+          = link_to 'Destroy', rate, :confirm => 'Are you sure?', :method => :delete
+        
+%br
+    
+= link_to 'New Rate', new_rate_path, :class => "btn primary"

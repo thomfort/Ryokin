@@ -1,0 +1,21 @@
+%p#notice
+  = notice
+
+%p
+  %strong
+    Bank:
+    = @rate.bank_id
+
+%p
+  %strong
+    Category rate type:
+    = @rate.category_rate_type_id
+
+%p
+  %strong
+    Percent rate:
+    = @rate.percent_rate    
+    
+= link_to 'Edit', edit_rate_path(@rate)
+|
+= link_to 'Back', rates_path
