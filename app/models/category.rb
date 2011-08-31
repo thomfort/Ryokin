@@ -1,3 +1,3 @@
 class Category < ActiveRecord::Base
-  belongs_to :category_rate_type  
+  has_many :category_rate_types
 end

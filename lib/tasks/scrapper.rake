@@ -87,7 +87,7 @@ namespace :scrapper do
     end
     
     desc 'load data from JS file'
-    task :bnc_hypo_closed do      
+    task :bnc_hypo_closed => :environment do    
       # HFA = Hypotheque Closed
       # HFA1  = 3 mois
       # HFA2  = 6 mois
@@ -106,7 +106,6 @@ namespace :scrapper do
       lines = open(source).read  
       data = {}
       type_name = "TauxFixeFerme";
-      
 
       lines.each do |line| 
         rates_ar = Rate.new
@@ -136,13 +135,43 @@ namespace :scrapper do
           if !rate_type_exist               
             # Save Rate Type
             puts "Need #{nb_month}"
-            rate_type_id = saveRateType(type_name, nb_month)
+            rate_type = RateType.new
+            begin
+              rate_type.name = type_name
+              rate_type.nb_month = nb_month
+              rate_type.save
+              rate_type_id = rate_type.id
+            rescue
+              puts "saveRateType method ERROR !"
+            end
+            #rate_type_id = saveRateType(type_name, nb_month/)
           else
             rate_type_id = rate_type_exist.id
           end        
 
           # Save Rates
-          saveRates(rate_type_id, 3, cat_id, $2.to_f)
+          # rates_ar = Rate.new
+          begin
+            puts "-- bankid = 3"
+            rates_ar.bank_id = 3  # Desjardins(1), BNC(3)
+
+            puts "-- cat_rate_type"
+            puts "--- cat_id = #{cat_id}"
+            cat_rate_type.category_id = cat_id
+            puts "--- rate_type_id = #{rate_type_id}"
+            cat_rate_type.rate_type_id = rate_type_id
+            cat_rate_type.save
+            
+            puts "-- cat_rate_type_id = #{cat_rate_type.id}"
+            rates_ar.category_rate_type_id = cat_rate_type.id
+            puts "-- rate = #{$2.to_f}"
+            rates_ar.percent_rate = $2.to_f    
+            rates_ar.save
+          rescue
+            puts "saveRates method ERROR !"
+          end
+          #(rate_type_id, bank_id, cat_id, rate)
+          #saveRates(rate_type_id, 3, cat_id, $2.to_f)
 
         end 
       end
@@ -151,6 +180,8 @@ namespace :scrapper do
       data.each do |k,v|
         puts "#{h_conv[k.to_i]} -=> #{v}"
       end
+      
+      
     end
   end
 end

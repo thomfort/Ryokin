@@ -1,5 +1,5 @@
 class CategoryRateType < ActiveRecord::Base
-  belongs_to :rate
-  has_one :category
-  has_one :rate_type
+  has_many :rates
+  belongs_to :category
+  belongs_to :rate_type
 end

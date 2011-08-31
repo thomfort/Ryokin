@@ -14326,3 +14326,553 @@ Rendered layouts/_footer.html.haml (1.8ms)
 Rendered layouts/_javascripts.html.haml (6.5ms)
 Rendered rates/edit.html.haml within layouts/application (59.4ms)
 Completed 200 OK in 102ms (Views: 66.6ms | ActiveRecord: 0.5ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+
+
+Started POST "/rates/1" for 127.0.0.1 at Tue Aug 30 20:57:44 -0400 2011
+  Processing by RatesController#update as HTML
+  Parameters: {"commit"=>"Update Rate", "rate"=>{"category_rate_type_id"=>"1", "percent_rate"=>"", "bank_id"=>"1"}, "authenticity_token"=>"nfsmT0KiX/JbjNEtP8Lmx7dKhScSeInWY3KFoHn3qm4=", "utf8"=>"✓", "id"=>"1"}
+  [1m[36mSQL (39.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mRate Load (0.3ms)[0m  SELECT `rates`.* FROM `rates` WHERE `rates`.`id` = 1 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  ROLLBACK
+Rendered rates/_form.html.haml (101.2ms)
+Rendered layouts/_stylesheets.html.haml (2.0ms)
+Rendered layouts/_head.html.haml (10.0ms)
+Rendered layouts/_header.html.haml (1.1ms)
+Rendered layouts/_flashes.html.haml (2.3ms)
+Rendered layouts/_footer.html.haml (2.0ms)
+Rendered layouts/_javascripts.html.haml (6.4ms)
+Rendered rates/edit.html.haml within layouts/application (198.5ms)
+Completed 200 OK in 424ms (Views: 206.9ms | ActiveRecord: 40.1ms)
+
+
+Started GET "/rates/1" for 127.0.0.1 at Tue Aug 30 20:57:46 -0400 2011
+  Processing by RatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRate Load (0.2ms)[0m  [1mSELECT `rates`.* FROM `rates` WHERE `rates`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.haml (2.0ms)
+Rendered layouts/_head.html.haml (9.8ms)
+Rendered layouts/_header.html.haml (1.0ms)
+Rendered layouts/_flashes.html.haml (2.4ms)
+Rendered layouts/_footer.html.haml (1.7ms)
+Rendered layouts/_javascripts.html.haml (6.4ms)
+Rendered rates/show.html.erb within layouts/application (118.5ms)
+Completed 200 OK in 168ms (Views: 157.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rates" for 127.0.0.1 at Tue Aug 30 20:57:47 -0400 2011
+  Processing by RatesController#index as HTML
+  [1m[35mRate Load (0.4ms)[0m  SELECT `rates`.* FROM `rates`
+Rendered layouts/_stylesheets.html.haml (2.1ms)
+Rendered layouts/_head.html.haml (11.7ms)
+Rendered layouts/_header.html.haml (1.0ms)
+Rendered layouts/_flashes.html.haml (2.4ms)
+Rendered layouts/_footer.html.haml (1.6ms)
+Rendered layouts/_javascripts.html.haml (6.3ms)
+Rendered rates/index.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 186ms (Views: 175.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rates/1" for 127.0.0.1 at Tue Aug 30 20:57:50 -0400 2011
+  Processing by RatesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRate Load (0.9ms)[0m  [1mSELECT `rates`.* FROM `rates` WHERE `rates`.`id` = 1 LIMIT 1[0m
+Rendered layouts/_stylesheets.html.haml (1.9ms)
+Rendered layouts/_head.html.haml (9.9ms)
+Rendered layouts/_header.html.haml (1.1ms)
+Rendered layouts/_flashes.html.haml (2.3ms)
+Rendered layouts/_footer.html.haml (1.7ms)
+Rendered layouts/_javascripts.html.haml (7.3ms)
+Rendered rates/show.html.erb within layouts/application (51.4ms)
+Completed 200 OK in 151ms (Views: 58.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/banks" for 127.0.0.1 at Tue Aug 30 20:57:54 -0400 2011
+  Processing by BanksController#index as HTML
+  [1m[35mBank Load (0.7ms)[0m  SELECT `banks`.* FROM `banks`
+Rendered layouts/_stylesheets.html.haml (2.0ms)
+Rendered layouts/_head.html.haml (9.4ms)
+Rendered layouts/_header.html.haml (1.1ms)
+Rendered layouts/_flashes.html.haml (3.2ms)
+Rendered layouts/_footer.html.haml (2.0ms)
+Rendered layouts/_javascripts.html.haml (6.1ms)
+Rendered banks/index.html.erb within layouts/application (47.7ms)
+Completed 200 OK in 203ms (Views: 65.0ms | ActiveRecord: 0.7ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (18.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 3 LIMIT 1[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 3 LIMIT 1[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 3 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (3.4ms)[0m  [1mdescribe `rate_types`[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `rate_types` (`created_at`, `name`, `updated_at`, `nb_month`) VALUES ('2011-08-31 01:36:35', 'TauxFixeFerme', '2011-08-31 01:36:35', 3)
+  [1m[36mSQL (0.4ms)[0m  [1mCOMMIT[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 3 LIMIT 1[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 3 LIMIT 1[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 3 LIMIT 1[0m
+  [1m[35mCategory Load (0.6ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.5ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 6 LIMIT 1[0m
+  [1m[35mCategory Load (0.8ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.3ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 12 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 24 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 36 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 48 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 60 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 84 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 120 LIMIT 1[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+
+
+Started GET "/banks/new" for 127.0.0.1 at Tue Aug 30 21:43:33 -0400 2011
+  Processing by BanksController#new as HTML
+Rendered banks/_form.html.erb (17.9ms)
+Rendered layouts/_stylesheets.html.haml (2.4ms)
+Rendered layouts/_head.html.haml (11.0ms)
+Rendered layouts/_header.html.haml (87.6ms)
+Rendered layouts/_flashes.html.haml (2.7ms)
+Rendered layouts/_footer.html.haml (1.9ms)
+Rendered layouts/_javascripts.html.haml (6.0ms)
+Rendered banks/new.html.erb within layouts/application (148.7ms)
+Completed 200 OK in 210ms (Views: 186.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/banks" for 127.0.0.1 at Tue Aug 30 21:43:52 -0400 2011
+  Processing by BanksController#create as HTML
+  Parameters: {"commit"=>"Create Bank", "authenticity_token"=>"nfsmT0KiX/JbjNEtP8Lmx7dKhScSeInWY3KFoHn3qm4=", "utf8"=>"✓", "bank"=>{"name"=>"Banque Nationnal du Canada", "logo_url"=>"", "abbr"=>"BNC"}}
+  [1m[36mSQL (16.7ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mSQL (1.3ms)[0m  [1mdescribe `banks`[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `banks` (`created_at`, `name`, `abbr`, `logo_url`, `updated_at`) VALUES ('2011-08-31 01:43:52', 'Banque Nationnal du Canada', 'BNC', '', '2011-08-31 01:43:52')
+  [1m[36mSQL (2.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/banks/3
+Completed 302 Found in 64ms
+
+
+Started GET "/banks/3" for 127.0.0.1 at Tue Aug 30 21:43:52 -0400 2011
+  Processing by BanksController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mBank Load (0.3ms)[0m  SELECT `banks`.* FROM `banks` WHERE `banks`.`id` = 3 LIMIT 1
+Rendered layouts/_stylesheets.html.haml (2.2ms)
+Rendered layouts/_head.html.haml (10.3ms)
+Rendered layouts/_header.html.haml (0.9ms)
+Rendered layouts/_flashes.html.haml (2.2ms)
+Rendered layouts/_footer.html.haml (1.9ms)
+Rendered layouts/_javascripts.html.haml (6.2ms)
+Rendered banks/show.html.erb within layouts/application (126.7ms)
+Completed 200 OK in 176ms (Views: 169.1ms | ActiveRecord: 21.1ms)
+
+
+Started GET "/banks" for 127.0.0.1 at Tue Aug 30 21:43:54 -0400 2011
+  Processing by BanksController#index as HTML
+  [1m[36mBank Load (0.3ms)[0m  [1mSELECT `banks`.* FROM `banks`[0m
+Rendered layouts/_stylesheets.html.haml (2.3ms)
+Rendered layouts/_head.html.haml (10.8ms)
+Rendered layouts/_header.html.haml (1.0ms)
+Rendered layouts/_flashes.html.haml (2.1ms)
+Rendered layouts/_footer.html.haml (1.7ms)
+Rendered layouts/_javascripts.html.haml (6.4ms)
+Rendered banks/index.html.erb within layouts/application (142.2ms)
+Completed 200 OK in 156ms (Views: 150.6ms | ActiveRecord: 0.3ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 3 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 6 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.3ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 12 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 24 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 36 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 48 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 60 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 84 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 120 LIMIT 1[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 3 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 6 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.8ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 12 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 24 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 36 LIMIT 1[0m
+  [1m[35mCategory Load (0.6ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 48 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 60 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 84 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 120 LIMIT 1[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 3 LIMIT 1[0m
+  [1m[35mCategory Load (0.6ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 6 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 12 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 24 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 36 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 48 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 60 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 84 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 120 LIMIT 1[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 3 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 6 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 12 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 24 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 36 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 48 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 60 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 84 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 120 LIMIT 1[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+  [1m[36mSQL (61.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.4ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 3 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 6 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 12 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 24 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 36 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 48 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 60 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 84 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.3ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 120 LIMIT 1[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 3 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 6 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 12 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 24 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 36 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 48 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 60 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.3ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 84 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 120 LIMIT 1[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 3 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.4ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 6 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 12 LIMIT 1[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (1.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 24 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 36 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 48 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 60 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 84 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 120 LIMIT 1[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 3 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 6 LIMIT 1[0m
+  [1m[35mCategory Load (0.6ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 12 LIMIT 1[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 24 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 36 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 48 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 60 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 84 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 120 LIMIT 1[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.4ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 3 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mdescribe `category_rate_types`[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `category_rate_types` (`category_id`, `created_at`, `rate_type_id`, `updated_at`) VALUES (1, '2011-08-31 02:15:26', 9, '2011-08-31 02:15:26')
+  [1m[36mSQL (7.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 6 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO `category_rate_types` (`category_id`, `created_at`, `rate_type_id`, `updated_at`) VALUES (1, '2011-08-31 02:15:26', 1, '2011-08-31 02:15:26')[0m
+  [1m[35mSQL (0.7ms)[0m  COMMIT
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1[0m
+  [1m[35mRateType Load (0.1ms)[0m  SELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 12 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `category_rate_types` (`category_id`, `created_at`, `rate_type_id`, `updated_at`) VALUES (1, '2011-08-31 02:15:26', 2, '2011-08-31 02:15:26')
+  [1m[36mSQL (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 24 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `category_rate_types` (`category_id`, `created_at`, `rate_type_id`, `updated_at`) VALUES (1, '2011-08-31 02:15:26', 3, '2011-08-31 02:15:26')[0m
+  [1m[35mSQL (7.8ms)[0m  COMMIT
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1[0m
+  [1m[35mRateType Load (0.1ms)[0m  SELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 36 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `category_rate_types` (`category_id`, `created_at`, `rate_type_id`, `updated_at`) VALUES (1, '2011-08-31 02:15:26', 4, '2011-08-31 02:15:26')
+  [1m[36mSQL (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 48 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `category_rate_types` (`category_id`, `created_at`, `rate_type_id`, `updated_at`) VALUES (1, '2011-08-31 02:15:26', 5, '2011-08-31 02:15:26')[0m
+  [1m[35mSQL (0.9ms)[0m  COMMIT
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1[0m
+  [1m[35mRateType Load (0.1ms)[0m  SELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 60 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `category_rate_types` (`category_id`, `created_at`, `rate_type_id`, `updated_at`) VALUES (1, '2011-08-31 02:15:26', 6, '2011-08-31 02:15:26')
+  [1m[36mSQL (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 84 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `category_rate_types` (`category_id`, `created_at`, `rate_type_id`, `updated_at`) VALUES (1, '2011-08-31 02:15:26', 7, '2011-08-31 02:15:26')[0m
+  [1m[35mSQL (0.4ms)[0m  COMMIT
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1[0m
+  [1m[35mRateType Load (0.2ms)[0m  SELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 120 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `category_rate_types` (`category_id`, `created_at`, `rate_type_id`, `updated_at`) VALUES (1, '2011-08-31 02:15:26', 8, '2011-08-31 02:15:26')
+  [1m[36mSQL (7.1ms)[0m  [1mCOMMIT[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mCategory Load (0.9ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 3 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mdescribe `category_rate_types`[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `category_rate_types` (`category_id`, `created_at`, `rate_type_id`, `updated_at`) VALUES (1, '2011-08-31 02:16:49', 9, '2011-08-31 02:16:49')
+  [1m[36mSQL (63.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 6 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO `category_rate_types` (`category_id`, `created_at`, `rate_type_id`, `updated_at`) VALUES (1, '2011-08-31 02:16:49', 1, '2011-08-31 02:16:49')[0m
+  [1m[35mSQL (0.8ms)[0m  COMMIT
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1[0m
+  [1m[35mRateType Load (0.2ms)[0m  SELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 12 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `category_rate_types` (`category_id`, `created_at`, `rate_type_id`, `updated_at`) VALUES (1, '2011-08-31 02:16:49', 2, '2011-08-31 02:16:49')
+  [1m[36mSQL (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 24 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `category_rate_types` (`category_id`, `created_at`, `rate_type_id`, `updated_at`) VALUES (1, '2011-08-31 02:16:49', 3, '2011-08-31 02:16:49')[0m
+  [1m[35mSQL (0.3ms)[0m  COMMIT
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1[0m
+  [1m[35mRateType Load (0.2ms)[0m  SELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 36 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `category_rate_types` (`category_id`, `created_at`, `rate_type_id`, `updated_at`) VALUES (1, '2011-08-31 02:16:49', 4, '2011-08-31 02:16:49')
+  [1m[36mSQL (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 48 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `category_rate_types` (`category_id`, `created_at`, `rate_type_id`, `updated_at`) VALUES (1, '2011-08-31 02:16:49', 5, '2011-08-31 02:16:49')[0m
+  [1m[35mSQL (0.4ms)[0m  COMMIT
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1[0m
+  [1m[35mRateType Load (0.2ms)[0m  SELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 60 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `category_rate_types` (`category_id`, `created_at`, `rate_type_id`, `updated_at`) VALUES (1, '2011-08-31 02:16:49', 6, '2011-08-31 02:16:49')
+  [1m[36mSQL (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 84 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `category_rate_types` (`category_id`, `created_at`, `rate_type_id`, `updated_at`) VALUES (1, '2011-08-31 02:16:49', 7, '2011-08-31 02:16:49')[0m
+  [1m[35mSQL (0.5ms)[0m  COMMIT
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1[0m
+  [1m[35mRateType Load (0.3ms)[0m  SELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 120 LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `category_rate_types` (`category_id`, `created_at`, `rate_type_id`, `updated_at`) VALUES (1, '2011-08-31 02:16:49', 8, '2011-08-31 02:16:49')
+  [1m[36mSQL (0.6ms)[0m  [1mCOMMIT[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+  [1m[36mSQL (0.5ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 3 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.7ms)[0m  [1mdescribe `category_rate_types`[0m
+  [1m[35mAREL (0.7ms)[0m  INSERT INTO `category_rate_types` (`rate_type_id`, `updated_at`, `created_at`, `category_id`) VALUES (9, '2011-08-31 02:19:15', '2011-08-31 02:19:15', 1)
+  [1m[36mSQL (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 6 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `category_rate_types` (`rate_type_id`, `updated_at`, `created_at`, `category_id`) VALUES (1, '2011-08-31 02:19:15', '2011-08-31 02:19:15', 1)[0m
+  [1m[35mSQL (0.4ms)[0m  COMMIT
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1[0m
+  [1m[35mRateType Load (0.3ms)[0m  SELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 12 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `category_rate_types` (`rate_type_id`, `updated_at`, `created_at`, `category_id`) VALUES (2, '2011-08-31 02:19:15', '2011-08-31 02:19:15', 1)
+  [1m[36mSQL (16.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 24 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO `category_rate_types` (`rate_type_id`, `updated_at`, `created_at`, `category_id`) VALUES (3, '2011-08-31 02:19:15', '2011-08-31 02:19:15', 1)[0m
+  [1m[35mSQL (12.7ms)[0m  COMMIT
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1[0m
+  [1m[35mRateType Load (0.1ms)[0m  SELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 36 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `category_rate_types` (`rate_type_id`, `updated_at`, `created_at`, `category_id`) VALUES (4, '2011-08-31 02:19:15', '2011-08-31 02:19:15', 1)
+  [1m[36mSQL (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 48 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `category_rate_types` (`rate_type_id`, `updated_at`, `created_at`, `category_id`) VALUES (5, '2011-08-31 02:19:15', '2011-08-31 02:19:15', 1)[0m
+  [1m[35mSQL (0.7ms)[0m  COMMIT
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1[0m
+  [1m[35mRateType Load (0.1ms)[0m  SELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 60 LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `category_rate_types` (`rate_type_id`, `updated_at`, `created_at`, `category_id`) VALUES (6, '2011-08-31 02:19:15', '2011-08-31 02:19:15', 1)
+  [1m[36mSQL (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 84 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO `category_rate_types` (`rate_type_id`, `updated_at`, `created_at`, `category_id`) VALUES (7, '2011-08-31 02:19:15', '2011-08-31 02:19:15', 1)[0m
+  [1m[35mSQL (0.4ms)[0m  COMMIT
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1[0m
+  [1m[35mRateType Load (0.4ms)[0m  SELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 120 LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `category_rate_types` (`rate_type_id`, `updated_at`, `created_at`, `category_id`) VALUES (8, '2011-08-31 02:19:15', '2011-08-31 02:19:15', 1)
+  [1m[36mSQL (0.6ms)[0m  [1mCOMMIT[0m
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+  [1m[36mSQL (0.4ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 3 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mdescribe `category_rate_types`[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `category_rate_types` (`rate_type_id`, `updated_at`, `created_at`, `category_id`) VALUES (9, '2011-08-31 02:20:18', '2011-08-31 02:20:18', 1)
+  [1m[36mSQL (24.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mdescribe `rates`[0m
+  [1m[35mAREL (0.5ms)[0m  INSERT INTO `rates` (`updated_at`, `bank_id`, `category_rate_type_id`, `percent_rate`, `created_at`) VALUES ('2011-08-31 02:20:18', 3, 36, 4, '2011-08-31 02:20:18')
+  [1m[36mSQL (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 6 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (1.6ms)[0m  [1mINSERT INTO `category_rate_types` (`rate_type_id`, `updated_at`, `created_at`, `category_id`) VALUES (1, '2011-08-31 02:20:18', '2011-08-31 02:20:18', 1)[0m
+  [1m[35mSQL (6.7ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `rates` (`updated_at`, `bank_id`, `category_rate_type_id`, `percent_rate`, `created_at`) VALUES ('2011-08-31 02:20:18', 3, 37, 4, '2011-08-31 02:20:18')
+  [1m[36mSQL (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 12 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `category_rate_types` (`rate_type_id`, `updated_at`, `created_at`, `category_id`) VALUES (2, '2011-08-31 02:20:18', '2011-08-31 02:20:18', 1)[0m
+  [1m[35mSQL (0.4ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `rates` (`updated_at`, `bank_id`, `category_rate_type_id`, `percent_rate`, `created_at`) VALUES ('2011-08-31 02:20:18', 3, 38, 3, '2011-08-31 02:20:18')
+  [1m[36mSQL (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 24 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `category_rate_types` (`rate_type_id`, `updated_at`, `created_at`, `category_id`) VALUES (3, '2011-08-31 02:20:18', '2011-08-31 02:20:18', 1)[0m
+  [1m[35mSQL (0.4ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.3ms)[0m  INSERT INTO `rates` (`updated_at`, `bank_id`, `category_rate_type_id`, `percent_rate`, `created_at`) VALUES ('2011-08-31 02:20:18', 3, 39, 3, '2011-08-31 02:20:18')
+  [1m[36mSQL (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 36 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO `category_rate_types` (`rate_type_id`, `updated_at`, `created_at`, `category_id`) VALUES (4, '2011-08-31 02:20:18', '2011-08-31 02:20:18', 1)[0m
+  [1m[35mSQL (0.4ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `rates` (`updated_at`, `bank_id`, `category_rate_type_id`, `percent_rate`, `created_at`) VALUES ('2011-08-31 02:20:18', 3, 40, 4, '2011-08-31 02:20:18')
+  [1m[36mSQL (18.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 48 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO `category_rate_types` (`rate_type_id`, `updated_at`, `created_at`, `category_id`) VALUES (5, '2011-08-31 02:20:18', '2011-08-31 02:20:18', 1)[0m
+  [1m[35mSQL (0.4ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `rates` (`updated_at`, `bank_id`, `category_rate_type_id`, `percent_rate`, `created_at`) VALUES ('2011-08-31 02:20:18', 3, 41, 4, '2011-08-31 02:20:18')
+  [1m[36mSQL (2.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.1ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 60 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.3ms)[0m  [1mINSERT INTO `category_rate_types` (`rate_type_id`, `updated_at`, `created_at`, `category_id`) VALUES (6, '2011-08-31 02:20:18', '2011-08-31 02:20:18', 1)[0m
+  [1m[35mSQL (0.5ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.2ms)[0m  INSERT INTO `rates` (`updated_at`, `bank_id`, `category_rate_type_id`, `percent_rate`, `created_at`) VALUES ('2011-08-31 02:20:18', 3, 42, 5, '2011-08-31 02:20:18')
+  [1m[36mSQL (6.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 84 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.2ms)[0m  [1mINSERT INTO `category_rate_types` (`rate_type_id`, `updated_at`, `created_at`, `category_id`) VALUES (7, '2011-08-31 02:20:18', '2011-08-31 02:20:18', 1)[0m
+  [1m[35mSQL (3.7ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `rates` (`updated_at`, `bank_id`, `category_rate_type_id`, `percent_rate`, `created_at`) VALUES ('2011-08-31 02:20:18', 3, 43, 6, '2011-08-31 02:20:18')
+  [1m[36mSQL (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT `categories`.* FROM `categories` WHERE `categories`.`name` = 'hypotheque' LIMIT 1
+  [1m[36mRateType Load (0.2ms)[0m  [1mSELECT `rate_types`.* FROM `rate_types` WHERE `rate_types`.`name` = 'TauxFixeFerme' AND `rate_types`.`nb_month` = 120 LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  BEGIN
+  [1m[36mAREL (0.1ms)[0m  [1mINSERT INTO `category_rate_types` (`rate_type_id`, `updated_at`, `created_at`, `category_id`) VALUES (8, '2011-08-31 02:20:18', '2011-08-31 02:20:18', 1)[0m
+  [1m[35mSQL (2.8ms)[0m  COMMIT
+  [1m[36mSQL (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mAREL (0.1ms)[0m  INSERT INTO `rates` (`updated_at`, `bank_id`, `category_rate_type_id`, `percent_rate`, `created_at`) VALUES ('2011-08-31 02:20:18', 3, 44, 6, '2011-08-31 02:20:18')
+  [1m[36mSQL (0.3ms)[0m  [1mCOMMIT[0m
