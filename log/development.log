@@ -16232,3 +16232,147 @@ Rendered layouts/_footer.html.haml (1.5ms)
 Rendered layouts/_javascripts.html.haml (6.5ms)
 Rendered rates/show.html.haml within layouts/application (136.3ms)
 Completed 200 OK in 154ms (Views: 143.5ms | ActiveRecord: 0.2ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+
+
+Started GET "/banks" for 127.0.0.1 at Tue Aug 30 23:00:52 -0400 2011
+  Processing by BanksController#index as HTML
+  [1m[36mBank Load (0.3ms)[0m  [1mSELECT `banks`.* FROM `banks`[0m
+Rendered layouts/_stylesheets.html.haml (86.9ms)
+Rendered layouts/_head.html.haml (96.1ms)
+Rendered layouts/_header.html.haml (1.2ms)
+Rendered layouts/_flashes.html.haml (2.9ms)
+Rendered layouts/_footer.html.haml (2.2ms)
+Rendered layouts/_javascripts.html.haml (7.1ms)
+Rendered banks/index.html.erb within layouts/application (142.5ms)
+Completed 200 OK in 201ms (Views: 150.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/banks" for 127.0.0.1 at Tue Aug 30 23:05:38 -0400 2011
+  Processing by BanksController#index as HTML
+  [1m[35mBank Load (0.3ms)[0m  SELECT `banks`.* FROM `banks`
+Rendered layouts/_stylesheets.html.haml (81.5ms)
+Rendered layouts/_head.html.haml (88.9ms)
+Rendered layouts/_header.html.haml (0.9ms)
+Rendered layouts/_flashes.html.haml (2.3ms)
+Rendered layouts/_footer.html.haml (1.9ms)
+Rendered layouts/_javascripts.html.haml (5.7ms)
+Rendered banks/index.html.erb within layouts/application (124.8ms)
+Completed 200 OK in 137ms (Views: 132.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/banks" for 127.0.0.1 at Tue Aug 30 23:07:18 -0400 2011
+  Processing by BanksController#index as HTML
+  [1m[36mBank Load (0.3ms)[0m  [1mSELECT `banks`.* FROM `banks`[0m
+Rendered layouts/_stylesheets.html.haml (83.3ms)
+Rendered layouts/_head.html.haml (92.2ms)
+Rendered layouts/_header.html.haml (1.1ms)
+Rendered layouts/_flashes.html.haml (2.3ms)
+Rendered layouts/_footer.html.haml (1.6ms)
+Rendered layouts/_javascripts.html.haml (7.2ms)
+Rendered banks/index.html.erb within layouts/application (130.5ms)
+Completed 200 OK in 143ms (Views: 137.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/banks" for 127.0.0.1 at Tue Aug 30 23:07:29 -0400 2011
+  Processing by BanksController#index as HTML
+  [1m[35mBank Load (0.3ms)[0m  SELECT `banks`.* FROM `banks`
+Rendered layouts/_stylesheets.html.haml (2.9ms)
+Rendered layouts/_head.html.haml (10.7ms)
+Rendered layouts/_header.html.haml (1.0ms)
+Rendered layouts/_flashes.html.haml (2.3ms)
+Rendered layouts/_footer.html.haml (1.5ms)
+Rendered layouts/_javascripts.html.haml (5.8ms)
+Rendered banks/index.html.haml within layouts/application (138.6ms)
+Completed 200 OK in 151ms (Views: 145.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/banks/new" for 127.0.0.1 at Tue Aug 30 23:07:32 -0400 2011
+  Processing by BanksController#new as HTML
+Rendered banks/_form.html.erb (12.9ms)
+Rendered layouts/_stylesheets.html.haml (2.4ms)
+Rendered layouts/_head.html.haml (11.9ms)
+Rendered layouts/_header.html.haml (1.2ms)
+Rendered layouts/_flashes.html.haml (2.9ms)
+Rendered layouts/_footer.html.haml (2.2ms)
+Rendered layouts/_javascripts.html.haml (6.9ms)
+Rendered banks/new.html.erb within layouts/application (153.1ms)
+Completed 200 OK in 168ms (Views: 161.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/banks/new" for 127.0.0.1 at Tue Aug 30 23:07:35 -0400 2011
+  Processing by BanksController#new as HTML
+Rendered banks/_form.html.erb (10.3ms)
+Rendered layouts/_stylesheets.html.haml (2.5ms)
+Rendered layouts/_head.html.haml (10.3ms)
+Rendered layouts/_header.html.haml (1.0ms)
+Rendered layouts/_flashes.html.haml (2.3ms)
+Rendered layouts/_footer.html.haml (1.5ms)
+Rendered layouts/_javascripts.html.haml (5.9ms)
+Rendered banks/new.html.erb within layouts/application (141.0ms)
+Completed 200 OK in 156ms (Views: 149.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 30 23:08:38 -0400 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_stylesheets.html.haml (86.5ms)
+Rendered layouts/_head.html.haml (94.6ms)
+Rendered layouts/_header.html.haml (1.0ms)
+Rendered layouts/_flashes.html.haml (2.0ms)
+Rendered layouts/_footer.html.haml (1.4ms)
+Rendered layouts/_javascripts.html.haml (5.6ms)
+Rendered home/index.html.erb within layouts/application (121.0ms)
+Completed 200 OK in 129ms (Views: 128.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 30 23:09:59 -0400 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_stylesheets.html.haml (2.0ms)
+Rendered layouts/_head.html.haml (9.4ms)
+Rendered layouts/_header.html.haml (0.9ms)
+Rendered layouts/_flashes.html.haml (2.2ms)
+Rendered layouts/_footer.html.haml (1.6ms)
+Rendered layouts/_javascripts.html.haml (86.5ms)
+Rendered home/index.html.haml within layouts/application (118.0ms)
+Completed 200 OK in 125ms (Views: 124.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Aug 30 23:10:07 -0400 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_stylesheets.html.haml (1.9ms)
+Rendered layouts/_head.html.haml (9.1ms)
+Rendered layouts/_header.html.haml (1.0ms)
+Rendered layouts/_flashes.html.haml (3.0ms)
+Rendered layouts/_footer.html.haml (1.6ms)
+Rendered layouts/_javascripts.html.haml (5.8ms)
+Rendered home/index.html.haml within layouts/application (37.2ms)
+Completed 200 OK in 44ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+  [1m[36mSQL (49.9ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mBank Load (0.2ms)[0m  SELECT `banks`.* FROM `banks` WHERE `banks`.`name` = 'Desjardins' LIMIT 1
+  [1m[36mRate Load (0.3ms)[0m  [1mSELECT `rates`.* FROM `rates` LIMIT 1[0m
+  [1m[35mSQL (41.0ms)[0m  SHOW TABLES
+  [1m[36mSQL (0.6ms)[0m  [1mSHOW TABLES[0m
+  [1m[35mSQL (0.5ms)[0m  SHOW TABLES
+  [1m[36mBank Load (1.0ms)[0m  [1mSELECT `banks`.* FROM `banks` WHERE `banks`.`name` = 'Desjardins' LIMIT 1[0m
+  [1m[35mRate Load (0.2ms)[0m  SELECT `rates`.* FROM `rates` WHERE `rates`.`bank_id` = 1 LIMIT 1
+  [1m[36mRate Load (0.5ms)[0m  [1mSELECT `rates`.* FROM `rates` WHERE `rates`.`bank_id` = 1 LIMIT 1[0m
+  [1m[35mRate Load (1.4ms)[0m  SELECT `rates`.* FROM `rates` WHERE `rates`.`bank_id` = 1 LIMIT 1
+  [1m[36mRate Load (0.4ms)[0m  [1mSELECT `rates`.* FROM `rates`[0m
+  [1m[35mRate Load (0.4ms)[0m  SELECT `rates`.* FROM `rates`
+  [1m[36mRate Load (1.1ms)[0m  [1mSELECT `rates`.* FROM `rates`[0m
+  [1m[35mRate Load (0.5ms)[0m  SELECT `rates`.* FROM `rates` WHERE `rates`.`bank_id` = 1
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 31 21:57:47 -0400 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_stylesheets.html.haml (2.2ms)
+Rendered layouts/_head.html.haml (11.0ms)
+Rendered layouts/_header.html.haml (1.1ms)
+Rendered layouts/_flashes.html.haml (2.7ms)
+Rendered layouts/_footer.html.haml (1.8ms)
+Rendered layouts/_javascripts.html.haml (6.9ms)
+Rendered home/index.html.haml within layouts/application (65.2ms)
+Completed 200 OK in 115ms (Views: 114.0ms | ActiveRecord: 0.0ms)

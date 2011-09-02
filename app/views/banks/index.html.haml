@@ -1,0 +1,35 @@
+%h1
+  Listing banks
+  
+%table{:class => "common-table zebra-striped"}
+  %thead
+    %tr
+      %th
+        Name
+      %th
+        Abbr
+      %th
+        Logo url
+      %th
+      %th
+      %th
+      
+  %tbody
+    - @banks.each do |bank|
+      %tr
+        %td
+          = bank.name
+        %td
+          = bank.abbr
+        %td
+          = bank.logo_url
+        %td
+          = link_to 'Show', bank
+        %td
+          = link_to 'Edit', edit_bank_path(bank)
+        %td
+          = link_to 'Destroy', bank, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Bank', new_bank_path, :class => "btn primary"
