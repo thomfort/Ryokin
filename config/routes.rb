@@ -8,6 +8,8 @@ Ryokin::Application.routes.draw do
   resources :rates
 
   resources :banks
+  
+  resources :dashboards
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

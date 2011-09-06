@@ -5,7 +5,7 @@
     -# To render a different stylesheet partial inside the head (i.e. for admin layout)
     -# just copy _stylesheets.html.haml, and point to that partial instead.
     = render "layouts/head", :stylesheet_partial => "layouts/stylesheets"
-    = stylesheet_link_tag 'http://twitter.github.com/bootstrap/assets/css/bootstrap-1.1.0.min.css', :media => 'all' 
+    = stylesheet_link_tag 'http://twitter.github.com/bootstrap/assets/css/bootstrap-1.2.0.min.css', :media => 'all' 
 
   
   %body{ :class => "#{controller.controller_name}" }
@@ -15,8 +15,7 @@
   
       #main{ :role => 'main' }
         = render "layouts/flashes"
-        = yield
-
+        = yield      
       %footer#footer
         = render "layouts/footer"
         

@@ -1,1 +1,17 @@
-%h1 Ryokin
+#navigation
+  .topbar-wrapper
+    .topbar
+      .topbar-inner
+        .container
+          %h3 
+            = link_to 'Ryokin', '/'
+          %ul{ :class => 'nav' }     
+            %li
+              = link_to 'Graphics', '#sub1'
+            %li
+              = link_to 'Calculette', '#sub2'
+            %li
+              = link_to 'Conseils', '#sub3'
+          %ul{ :class => 'nav secondary-nav' }
+            %li
+              = link_to 'Sign In', '#'

@@ -1,0 +1,27 @@
+- content_for :js_charts do
+  :javascript
+    $(document).ready(function() {
+      $(function() {
+      	new Highcharts.Chart({
+      		chart: {
+      			renderTo: "orders_charts"
+      		},
+      		title: {
+      			text: "Rates Bank"
+      		},
+      		xAxis: {
+      			type: "datatime"
+      		},
+      		yAxis: {
+      			title: {
+      				text: "Dollars"
+      			}
+      		},
+      		series: [{
+      			data: [1, 2, 5, 3]
+      			}]
+      	});
+      });
+    });
+    
+#orders_charts{:style => 'width: 360px; height: 250px;'}

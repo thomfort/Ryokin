@@ -303,6 +303,16 @@ input:invalid, textarea:invalid {
   background-color: #f0dddd;
 }
 
+/* line 55, ../../app/stylesheets/partials/_page.scss */
+#main {
+  margin-top: 40px;
+}
+
+/* line 57, ../../app/stylesheets/partials/_page.scss */
+section {
+  padding-top: 40px;
+}
+
 /*/mediaquery*/
 /*/mediaquery*/
 @media print {
