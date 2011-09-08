@@ -17127,3 +17127,46 @@ Rendered layouts/_footer.html.haml (1.5ms)
 Rendered layouts/_javascripts.html.haml (6.1ms)
 Rendered dashboards/index.html.haml within layouts/application (137.4ms)
 Completed 200 OK in 145ms (Views: 144.4ms | ActiveRecord: 0.0ms)
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from /Users/thomasfortier/Sites/ryokin/production/ryokin/config/environment.rb:5)
+
+
+Started GET "/" for 127.0.0.1 at Wed Sep 07 18:51:00 -0400 2011
+  Processing by HomeController#index as HTML
+Rendered layouts/_stylesheets.html.haml (4.1ms)
+Rendered layouts/_head.html.haml (18.9ms)
+Rendered layouts/_header.html.haml (25.8ms)
+Rendered layouts/_flashes.html.haml (3.8ms)
+Rendered layouts/_footer.html.haml (2.0ms)
+Rendered layouts/_javascripts.html.haml (181.4ms)
+Rendered home/index.html.haml within layouts/application (261.8ms)
+Completed 200 OK in 281ms (Views: 276.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboards" for 127.0.0.1 at Wed Sep 07 18:51:13 -0400 2011
+  Processing by DashboardsController#index as HTML
+Rendered dashboards/_sub1.html.haml (4.7ms)
+Rendered dashboards/_sub2.html.haml (0.7ms)
+Rendered dashboards/_sub3.html.haml (0.7ms)
+Rendered layouts/_stylesheets.html.haml (2.8ms)
+Rendered layouts/_head.html.haml (11.2ms)
+Rendered layouts/_header.html.haml (8.9ms)
+Rendered layouts/_flashes.html.haml (2.2ms)
+Rendered layouts/_footer.html.haml (93.3ms)
+Rendered layouts/_javascripts.html.haml (25.9ms)
+Rendered dashboards/index.html.haml within layouts/application (183.1ms)
+Completed 200 OK in 224ms (Views: 223.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/dashboards" for 127.0.0.1 at Wed Sep 07 20:22:13 -0400 2011
+  Processing by DashboardsController#index as HTML
+Rendered dashboards/_sub1.html.haml (3.3ms)
+Rendered dashboards/_sub2.html.haml (0.9ms)
+Rendered dashboards/_sub3.html.haml (0.8ms)
+Rendered layouts/_stylesheets.html.haml (1.8ms)
+Rendered layouts/_head.html.haml (10.0ms)
+Rendered layouts/_header.html.haml (6.0ms)
+Rendered layouts/_flashes.html.haml (2.3ms)
+Rendered layouts/_footer.html.haml (1.7ms)
+Rendered layouts/_javascripts.html.haml (97.8ms)
+Rendered dashboards/index.html.haml within layouts/application (149.0ms)
+Completed 200 OK in 160ms (Views: 159.1ms | ActiveRecord: 0.0ms)
