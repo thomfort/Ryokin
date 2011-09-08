@@ -6,9 +6,6 @@ class Rate < ActiveRecord::Base
   
   validates_presence_of :percent_rate
   
-  def getRatesByBank(bank_name)
-    Rate.all(:conditions => {:bank_id => bank.id})  
-  end
   
   
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110826020507) do
+ActiveRecord::Schema.define(:version => 20110831031231) do
 
   create_table "banks", :force => true do |t|
     t.string   "name"
@@ -33,6 +33,11 @@ ActiveRecord::Schema.define(:version => 20110826020507) do
     t.datetime "updated_at"
   end
 
+  create_table "dashboards", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "rate_types", :force => true do |t|
     t.string   "name"
     t.integer  "nb_month"
@@ -43,7 +48,7 @@ ActiveRecord::Schema.define(:version => 20110826020507) do
   create_table "rates", :force => true do |t|
     t.integer  "bank_id"
     t.integer  "category_rate_type_id"
-    t.decimal  "percent_rate",          :precision => 10, :scale => 0
+    t.float    "percent_rate"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -5,7 +5,7 @@ Category.delete_all
 CategoryRateType.delete_all
 
 
-banks = { 1 => "Desjardins", 2 => "ING"}
+banks = { 1 => "Desjardins", 2 => "ING", 3 => "BNC"}
 
 banks.each do |id,bank|
   puts "ID => #{id}"
