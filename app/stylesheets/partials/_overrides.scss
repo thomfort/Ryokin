@@ -50,6 +50,8 @@ textarea { overflow: auto; }
 
 .hidden { @include hidden; }
 
+.clear {clear:both;}
+
 .visuallyhidden { @include visually-hidden; }
 
 .clearfix {

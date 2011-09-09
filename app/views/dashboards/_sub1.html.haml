@@ -20,6 +20,39 @@
       		#{getRatesByBank}
       	});
       });
+      $(function() {
+      	new Highcharts.Chart({
+      		chart: {
+      			renderTo: "orders_charts2"
+      		},
+      		title: {
+      			text: "Rates Bank2"
+      		},
+      		xAxis: {
+      			type: "datatime"
+      		},
+      		yAxis: {
+      			title: {
+      				text: "Dollars"
+      			}
+      		},
+      		#{getRatesByBank}
+      	});
+      });
     });
     
-#orders_charts{:style => 'width: 360px; height: 250px;'}
+#orders_charts{:style => 'float: left; width: 360px; height: 250px;'}
+%div{:style => "float:left; width: 100px;padding-top: 75px;margin-left: 10px;"}
+  PDF [icon]
+  %br
+  RSS [icon]
+  %br
+  Excel [icon]
+#orders_charts2{:style => 'float: left; width: 360px; height: 250px;'}
+%div{:style => "float:left; width: 100px;padding-top: 75px;margin-left: 10px;"}
+  PDF [icon]
+  %br
+  RSS [icon]
+  %br
+  Excel [icon]
+%div{:style => 'clear:both'}

@@ -42,6 +42,9 @@ input:invalid, textarea:invalid {
 .no-boxshadow textarea:invalid { background-color: #f0dddd; }
 
 
+// Helper
+div.clear {clear: both;}
+
 //-----------------------------------
 // Add your own custom styles below
 //-----------------------------------
