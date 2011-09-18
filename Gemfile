@@ -46,3 +46,5 @@ gem 'jquery-rails'
 #   gem 'webrat'
 # end
 gem "jquery-rails"
+
+gem "sorcery"

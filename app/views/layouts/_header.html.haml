@@ -12,6 +12,17 @@
               = link_to 'Calculette', '#sub2'
             %li
               = link_to 'Conseils', '#sub3'
-          %ul.nav.secondary-nav
-            %li
-              = link_to 'Sign In', '#'
+          %ul.nav.secondary-nav            
+            - if current_user
+              %li   
+                %a       
+                  Logged in as #{current_user.email}
+              %li 
+                = link_to "Log out", logout_path
+            - else
+              %li
+                = link_to "Sign up", signup_path
+              %li
+                = link_to "log in", login_path
+
+
