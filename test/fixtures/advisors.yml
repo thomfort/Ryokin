@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  advisor_type_id: 1
+  bank_id: 1
+  lastname: MyString
+  firstname: MyString
+
+two:
+  advisor_type_id: 1
+  bank_id: 1
+  lastname: MyString
+  firstname: MyString
