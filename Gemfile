@@ -30,6 +30,11 @@ gem 'mysql2', '>= 0.3'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
 
+gem "sorcery"
+gem "acts_as_commentable", "~> 3.0.1"
+gem "mail", "~> 2.3.0"
+gem "pony", "~> 1.3"
+gem 'activeadmin'
 
 group :assets do
   gem 'sass-rails', " ~> 3.1.0"
@@ -47,4 +52,4 @@ gem 'jquery-rails'
 # end
 gem "jquery-rails"
 
-gem "sorcery"
+
