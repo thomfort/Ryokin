@@ -1,9 +1,9 @@
 class AdvisorsController < ApplicationController
   def index
-    @advisor = Advisor.new
+    @advisors = Advisor.all
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html # index.html.erb
       format.xml  { render :xml => @advisor }
     end
   end
@@ -19,6 +19,7 @@ class AdvisorsController < ApplicationController
   
   def edit
     @advisor = Advisor.find(params[:id])
+    
   end
   
   def new
@@ -30,9 +31,23 @@ class AdvisorsController < ApplicationController
     end
   end
   
+  def add_comment
+    @advisor = Advisor.find(params[:commentable][:commentable_id])
+    body_comment = params[:advisor][:comment]
+    begin
+      @advisor.comments.create( :title => "Title comment", 
+                                :comment => body_comment,
+                                :user => current_user)
+    rescue
+      redirect_to advisors_url, :notice => "Error when inserting comment for #{@advisor.firstname}!"
+    else
+      redirect_to advisors_url, :notice => "Comment was successfully added for #{@advisor.firstname}."
+    end
+      
+  end
+  
   def create
     @advisor = Advisor.new(params[:advisor])
-    #@advisor_type = AdvisorType.find(:first, :conditions => "id = #{@advisor.advisor_type_id}")
     
     respond_to do |format|
       if @advisor.save

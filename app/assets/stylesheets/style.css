@@ -305,12 +305,12 @@ input:invalid, textarea:invalid {
 
 /* line 55, ../../app/stylesheets/partials/_page.scss */
 #main {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 /* line 57, ../../app/stylesheets/partials/_page.scss */
 section {
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 /*/mediaquery*/

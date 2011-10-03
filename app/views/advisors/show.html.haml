@@ -1,0 +1,20 @@
+%section#advisor
+  .page-header
+    %h1      
+      = @advisor.lastname + ', ' + @advisor.firstname
+      %small 
+        = AdvisorType.find(@advisor.advisor_type).name
+        %em
+          at               
+        = Bank.find(@advisor.bank).name
+        
+  .row
+    .span4
+      sidebar
+    .span12
+      main text
+    
+    .span16
+      = link_to 'Edit', edit_advisor_path(@advisor)
+      |
+      = link_to 'Back', advisors_path

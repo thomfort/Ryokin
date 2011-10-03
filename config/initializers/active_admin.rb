@@ -1,5 +1,14 @@
 ActiveAdmin.setup do |config|
-
+  # Patch for dev
+  # https://github.com/gregbell/active_admin/issues/278#issuecomment-1580461
+  unless ENV['ENABLE_ACTIVE_ADMIN_RELOADS']
+    module ActiveAdmin
+      class Reloader
+        def attach!
+        end
+      end
+    end
+  end
   # == Site Title
   #
   # Set the title that is displayed on the main layout

@@ -1,0 +1,702 @@
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:24', '2011-10-01 20:15:24', 298486374)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:24', '2011-10-01 20:15:24', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:24', '2011-10-01 20:15:24', 980190962)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:24', '2011-10-01 20:15:24', 298486374)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:24', '2011-10-01 20:15:24', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:24', '2011-10-01 20:15:24', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:24', '2011-10-01 20:15:24', 298486374)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:24', '2011-10-01 20:15:24', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:24', '2011-10-01 20:15:24', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.9ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:24', '2011-10-01 20:15:24', 298486374)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:24', '2011-10-01 20:15:24', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:24', '2011-10-01 20:15:24', 980190962)
+  [1m[36m (2.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:24', '2011-10-01 20:15:24', 298486374)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:24', '2011-10-01 20:15:24', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:24', '2011-10-01 20:15:24', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (23.3ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:24', '2011-10-01 20:15:24', 298486374)[0m
+  [1m[35mFixture Insert (14.1ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:24', '2011-10-01 20:15:24', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:24', '2011-10-01 20:15:24', 980190962)
+  [1m[36m (8.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (1.0ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.8ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (1.1ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (36.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (3.7ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (1.1ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.7ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.6ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (1.2ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (1.6ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (29.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (4.2ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (1.1ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (10.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (3.8ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.3ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (10.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (0.9ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (3.9ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (17.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (12.9ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.8ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (0.8ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (10.1ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (3.8ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (34.8ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (8.5ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 298486374)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:31', '2011-10-01 20:15:31', 980190962)
+  [1m[36m (22.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:32', '2011-10-01 20:15:32', 298486374)[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:32', '2011-10-01 20:15:32', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:32', '2011-10-01 20:15:32', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (3.0ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:32', '2011-10-01 20:15:32', 298486374)[0m
+  [1m[35mFixture Insert (1.2ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:32', '2011-10-01 20:15:32', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:15:32', '2011-10-01 20:15:32', 980190962)
+  [1m[36m (11.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.3ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (24.1ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:43', '2011-10-01 20:17:43', 298486374)[0m
+  [1m[35mFixture Insert (2.8ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:43', '2011-10-01 20:17:43', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:43', '2011-10-01 20:17:43', 980190962)
+  [1m[36m (9.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.9ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (1.1ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:43', '2011-10-01 20:17:43', 298486374)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:43', '2011-10-01 20:17:43', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:43', '2011-10-01 20:17:43', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:43', '2011-10-01 20:17:43', 298486374)[0m
+  [1m[35mFixture Insert (1.3ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:43', '2011-10-01 20:17:43', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:43', '2011-10-01 20:17:43', 980190962)
+  [1m[36m (0.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.6ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:43', '2011-10-01 20:17:43', 298486374)[0m
+  [1m[35mFixture Insert (1.2ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:43', '2011-10-01 20:17:43', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:43', '2011-10-01 20:17:43', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:43', '2011-10-01 20:17:43', 298486374)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:43', '2011-10-01 20:17:43', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:43', '2011-10-01 20:17:43', 980190962)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:43', '2011-10-01 20:17:43', 298486374)[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:43', '2011-10-01 20:17:43', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:43', '2011-10-01 20:17:43', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.4ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:49', '2011-10-01 20:17:49', 298486374)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:49', '2011-10-01 20:17:49', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:49', '2011-10-01 20:17:49', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (1.4ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:49', '2011-10-01 20:17:49', 298486374)[0m
+  [1m[35mFixture Insert (17.9ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:49', '2011-10-01 20:17:49', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:49', '2011-10-01 20:17:49', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.7ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:49', '2011-10-01 20:17:49', 298486374)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:49', '2011-10-01 20:17:49', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:49', '2011-10-01 20:17:49', 980190962)
+  [1m[36m (9.9ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:49', '2011-10-01 20:17:49', 298486374)[0m
+  [1m[35mFixture Insert (4.1ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:49', '2011-10-01 20:17:49', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:49', '2011-10-01 20:17:49', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:49', '2011-10-01 20:17:49', 298486374)[0m
+  [1m[35mFixture Insert (1.1ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:49', '2011-10-01 20:17:49', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:49', '2011-10-01 20:17:49', 980190962)
+  [1m[36m (19.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:49', '2011-10-01 20:17:49', 298486374)[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:49', '2011-10-01 20:17:49', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:49', '2011-10-01 20:17:49', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (1.2ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (10.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (4.1ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (11.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (3.9ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (10.9ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (0.6ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (1.1ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (10.7ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (4.0ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.4ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (0.4ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (11.8ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (0.9ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (0.5ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.4ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (0.7ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (10.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (4.1ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.6ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (1.1ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (10.8ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (4.2ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.5ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (0.5ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (11.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (0.6ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (20.7ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (1.0ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (8.9ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (3.8ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.4ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (11.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.9ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (0.3ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.5ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.2ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.2ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.5ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (1.2ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (9.9ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (4.0ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.2ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.3ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (1.0ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (11.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1
+  [1m[36m (0.1ms)[0m  [1mSELECT @@FOREIGN_KEY_CHECKS[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 0
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM `admin_users`
+  [1m[36mFixture Insert (0.2ms)[0m  [1mINSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 298486374)[0m
+  [1m[35mFixture Insert (3.9ms)[0m  INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+Mysql2::Error: Duplicate entry '' for key 'index_admin_users_on_email': INSERT INTO `admin_users` (`created_at`, `updated_at`, `id`) VALUES ('2011-10-01 20:17:50', '2011-10-01 20:17:50', 980190962)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  SET FOREIGN_KEY_CHECKS = 1

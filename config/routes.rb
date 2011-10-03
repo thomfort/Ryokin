@@ -1,11 +1,11 @@
 Ryokin::Application.routes.draw do
-  ActiveAdmin.routes(self)
+  #ActiveAdmin.routes(self)
 
-  devise_for :admin_users, ActiveAdmin::Devise.config
+  #devise_for :admin_users, ActiveAdmin::Devise.config
 
-  get "advisors/index"
+#  get "advisors/index"
 
-  get "advisor/index"
+#  get "advisor/index"
 
   get "logout" => "sessions#destroy", :as => "logout"
   get "login" => "sessions#new", :as => "login"
@@ -83,5 +83,5 @@ Ryokin::Application.routes.draw do
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id(.:format)))'
+  match ':controller(/:action(/:id(.:format)))'
 end

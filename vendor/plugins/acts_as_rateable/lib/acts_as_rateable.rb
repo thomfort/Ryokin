@@ -10,7 +10,9 @@ module ActiveRecord
           has_one :rating, :as => :rateable, :dependent => :destroy
 
           unless respond_to?(:max_rating)
-            class_inheritable_accessor :max_rating
+            # Deprecate
+            #class_inheritable_accessor :max_rating
+            class_attribute :max_rating
             attr_protected :max_rating
             self.max_rating = options[:max_rating] || 5
           end

@@ -1,0 +1,461 @@
+
+
+Started GET "/advisors/1" for 127.0.0.1 at Sat Oct 01 21:52:35 -0400 2011
+
+Sass::SyntaxError (File to import not found or unreadable: active_admin/mixins.
+Load paths:
+  Compass::SpriteImporter
+  /Users/thomasfortier/Sites/ryokin/production/ryokin/public/stylesheets/sass
+  /Users/thomasfortier/Sites/ryokin/production/ryokin/app/assets/stylesheets
+  /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets
+  /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets
+  /Library/Ruby/Gems/1.8/gems/html5-boilerplate-1.0.0/stylesheets):
+  app/assets/stylesheets/active_admin.css.scss:2
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.9ms)
+
+
+Started GET "/advisors/1" for 127.0.0.1 at Sat Oct 01 21:52:36 -0400 2011
+  Processing by AdvisorsController#show as HTML
+  Parameters: {"id"=>"1"}
+Rendered advisors/show.html.haml within layouts/application (14.1ms)
+Rendered layouts/_stylesheets.html.haml (3.1ms)
+Rendered layouts/_head.html.haml (9.7ms)
+Completed 500 Internal Server Error in 65ms
+
+ActionView::Template::Error (style.css isn't precompiled):
+    1: -# CSS: implied media="all"
+    2: = stylesheet_link_tag 'style', :media => 'all'
+    3: 
+    4: -# Append your own using content_for :stylesheets
+    5: = yield :stylesheets
+  app/views/layouts/_stylesheets.html.haml:2:in `_app_views_layouts__stylesheets_html_haml___1511388980_2189895500'
+  app/views/layouts/_head.html.haml:20:in `_app_views_layouts__head_html_haml__847773564_2190051400'
+  app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___2036714542_2190863120'
+  app/views/layouts/application.html.haml:3:in `_app_views_layouts_application_html_haml___2036714542_2190863120'
+  app/controllers/advisors_controller.rb:14:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.9ms)
+
+
+Started GET "/advisors" for 127.0.0.1 at Sat Oct 01 21:52:52 -0400 2011
+  Processing by AdvisorsController#index as HTML
+Rendered advisors/index.html.haml within layouts/application (1.5ms)
+Rendered layouts/_stylesheets.html.haml (1.6ms)
+Rendered layouts/_head.html.haml (2.2ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (style.css isn't precompiled):
+    1: -# CSS: implied media="all"
+    2: = stylesheet_link_tag 'style', :media => 'all'
+    3: 
+    4: -# Append your own using content_for :stylesheets
+    5: = yield :stylesheets
+  app/views/layouts/_stylesheets.html.haml:2:in `_app_views_layouts__stylesheets_html_haml___1511388980_2189895500'
+  app/views/layouts/_head.html.haml:20:in `_app_views_layouts__head_html_haml__847773564_2190051400'
+  app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___2036714542_2190863120'
+  app/views/layouts/application.html.haml:3:in `_app_views_layouts_application_html_haml___2036714542_2190863120'
+  app/controllers/advisors_controller.rb:5:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.6ms)
+
+
+Started GET "/rates" for 127.0.0.1 at Sat Oct 01 21:52:55 -0400 2011
+  Processing by RatesController#index as HTML
+Rendered rates/index.html.haml within layouts/application (8.9ms)
+Rendered layouts/_stylesheets.html.haml (1.5ms)
+Rendered layouts/_head.html.haml (2.0ms)
+Completed 500 Internal Server Error in 45ms
+
+ActionView::Template::Error (style.css isn't precompiled):
+    1: -# CSS: implied media="all"
+    2: = stylesheet_link_tag 'style', :media => 'all'
+    3: 
+    4: -# Append your own using content_for :stylesheets
+    5: = yield :stylesheets
+  app/views/layouts/_stylesheets.html.haml:2:in `_app_views_layouts__stylesheets_html_haml___1511388980_2189895500'
+  app/views/layouts/_head.html.haml:20:in `_app_views_layouts__head_html_haml__847773564_2190051400'
+  app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___2036714542_2190863120'
+  app/views/layouts/application.html.haml:3:in `_app_views_layouts_application_html_haml___2036714542_2190863120'
+  app/controllers/rates_controller.rb:7:in `index'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.1ms)
+
+
+Started GET "/dashboards" for 127.0.0.1 at Sat Oct 01 21:52:57 -0400 2011
+  Processing by DashboardsController#index as HTML
+Redirected to http://0.0.0.0:3000/login
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at Sat Oct 01 21:52:57 -0400 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (7.2ms)
+Rendered layouts/_stylesheets.html.haml (1.7ms)
+Rendered layouts/_head.html.haml (2.2ms)
+Completed 500 Internal Server Error in 144ms
+
+ActionView::Template::Error (style.css isn't precompiled):
+    1: -# CSS: implied media="all"
+    2: = stylesheet_link_tag 'style', :media => 'all'
+    3: 
+    4: -# Append your own using content_for :stylesheets
+    5: = yield :stylesheets
+  app/views/layouts/_stylesheets.html.haml:2:in `_app_views_layouts__stylesheets_html_haml___1511388980_2189895500'
+  app/views/layouts/_head.html.haml:20:in `_app_views_layouts__head_html_haml__847773564_2190051400'
+  app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___2036714542_2190863120'
+  app/views/layouts/application.html.haml:3:in `_app_views_layouts_application_html_haml___2036714542_2190863120'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (5.9ms)
+
+
+Started GET "/login" for 127.0.0.1 at Sat Oct 01 21:54:43 -0400 2011
+
+Sass::SyntaxError (File to import not found or unreadable: active_admin/mixins.
+Load paths:
+  Compass::SpriteImporter
+  /Users/thomasfortier/Sites/ryokin/production/ryokin/public/stylesheets/sass
+  /Users/thomasfortier/Sites/ryokin/production/ryokin/app/assets/stylesheets
+  /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets
+  /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets
+  /Library/Ruby/Gems/1.8/gems/html5-boilerplate-1.0.0/stylesheets):
+  app/assets/stylesheets/active_admin.css.scss:2
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.3ms)
+
+
+Started GET "/rates" for 127.0.0.1 at Sat Oct 01 21:54:52 -0400 2011
+  Processing by RatesController#index as HTML
+Rendered rates/index.html.haml within layouts/application (9.2ms)
+Compiled style.css  (0ms)  (pid 63889)
+Rendered layouts/_stylesheets.html.haml (336.1ms)
+Compiled modernizr.min  (0ms)  (pid 63889)
+Compiled respond.min  (0ms)  (pid 63889)
+Rendered layouts/_head.html.haml (2290.7ms)
+Rendered layouts/_header.html.haml (23.2ms)
+Rendered layouts/_flashes.html.haml (4.7ms)
+Rendered layouts/_footer.html.haml (2.1ms)
+Compiled rails.js  (1ms)  (pid 63889)
+Compiled plugins.js  (0ms)  (pid 63889)
+Compiled application.js  (32ms)  (pid 63889)
+Compiled jquery.js  (6ms)  (pid 63889)
+Compiled jquery_ujs.js  (1ms)  (pid 63889)
+Compiled active_admin.js  (5ms)  (pid 63889)
+Compiled active_admin/base.js  (24ms)  (pid 63889)
+Compiled active_admin/vendor.js  (12ms)  (pid 63889)
+Compiled advisors.js  (723ms)  (pid 63889)
+Compiled excanvas.compiled.js  (2ms)  (pid 63889)
+Compiled highcharts.js  (7ms)  (pid 63889)
+Compiled jquery-ui.js  (9ms)  (pid 63889)
+Compiled jquery-ui.min.js  (4ms)  (pid 63889)
+Compiled jquery.min.js  (2ms)  (pid 63889)
+Compiled sessions.js  (554ms)  (pid 63889)
+Compiled users.js  (710ms)  (pid 63889)
+Rendered layouts/_javascripts.html.haml (37107.3ms)
+Completed 200 OK in 39476ms (Views: 39470.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/style-dd206d08fbeb180fc76a375d0820bbd5.css" for 127.0.0.1 at Sat Oct 01 21:55:31 -0400 2011
+Served asset /style-dd206d08fbeb180fc76a375d0820bbd5.css - 200 OK (3ms)
+
+
+Started GET "/assets/modernizr-64b4dfcb9a0bd57d8efad27d6dfbd01d.min" for 127.0.0.1 at Sat Oct 01 21:55:31 -0400 2011
+Served asset /modernizr-64b4dfcb9a0bd57d8efad27d6dfbd01d.min - 200 OK (1ms)
+
+
+Started GET "/assets/respond-f67e4da0b6c96cd93c70fc3307f41af0.min" for 127.0.0.1 at Sat Oct 01 21:55:31 -0400 2011
+Served asset /respond-f67e4da0b6c96cd93c70fc3307f41af0.min - 200 OK (3ms)
+
+
+Started GET "/assets/rails-15866ded87559ff4994550e03bc9df28.js" for 127.0.0.1 at Sat Oct 01 21:55:31 -0400 2011
+Served asset /rails-15866ded87559ff4994550e03bc9df28.js - 200 OK (1ms)
+
+
+Started GET "/assets/plugins-57daf02fa870c45f4a9f827339d66f5a.js" for 127.0.0.1 at Sat Oct 01 21:55:31 -0400 2011
+Served asset /plugins-57daf02fa870c45f4a9f827339d66f5a.js - 200 OK (18ms)
+
+
+Started GET "/assets/application-901275c38a7546e4483ecaffd0f2d55f.js" for 127.0.0.1 at Sat Oct 01 21:55:32 -0400 2011
+Served asset /application-901275c38a7546e4483ecaffd0f2d55f.js - 200 OK (1ms)
+
+
+Started GET "/assets/highcharts-4f1860144b8657155796dd677c31f39d.js" for 127.0.0.1 at Sat Oct 01 21:55:32 -0400 2011
+Served asset /highcharts-4f1860144b8657155796dd677c31f39d.js - 200 OK (2ms)
+
+
+Started GET "/rates" for 127.0.0.1 at Sat Oct 01 21:55:36 -0400 2011
+  Processing by RatesController#index as HTML
+Rendered rates/index.html.haml within layouts/application (0.6ms)
+Rendered layouts/_stylesheets.html.haml (0.6ms)
+Rendered layouts/_head.html.haml (1.8ms)
+Rendered layouts/_header.html.haml (0.9ms)
+Rendered layouts/_flashes.html.haml (0.3ms)
+Rendered layouts/_footer.html.haml (0.3ms)
+Rendered layouts/_javascripts.html.haml (2.4ms)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/advisors" for 127.0.0.1 at Sat Oct 01 21:55:40 -0400 2011
+  Processing by AdvisorsController#index as HTML
+Rendered advisors/index.html.haml within layouts/application (1.6ms)
+Rendered layouts/_stylesheets.html.haml (0.8ms)
+Rendered layouts/_head.html.haml (2.1ms)
+Rendered layouts/_header.html.haml (1.1ms)
+Rendered layouts/_flashes.html.haml (0.3ms)
+Rendered layouts/_footer.html.haml (0.3ms)
+Rendered layouts/_javascripts.html.haml (2.0ms)
+Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/dashboards" for 127.0.0.1 at Sat Oct 01 22:56:24 -0400 2011
+  Processing by DashboardsController#index as HTML
+Redirected to http://0.0.0.0:3000/login
+Completed 302 Found in 1ms
+
+
+Started GET "/login" for 127.0.0.1 at Sat Oct 01 22:56:24 -0400 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (6.9ms)
+Rendered layouts/_stylesheets.html.haml (0.6ms)
+Rendered layouts/_head.html.haml (1.8ms)
+Rendered layouts/_header.html.haml (1.2ms)
+Rendered layouts/_flashes.html.haml (0.5ms)
+Rendered layouts/_footer.html.haml (0.4ms)
+Rendered layouts/_javascripts.html.haml (2.0ms)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Sat Oct 01 22:56:27 -0400 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"getFUzG37VXTeIsufU86T/KNl7BigpQJr1U5hKHc+yQ=", "utf8"=>"✓", "password"=>"[FILTERED]", "email"=>"thomas.fortier@gmail.com"}
+Rendered sessions/new.html.haml within layouts/application (2.6ms)
+Rendered layouts/_stylesheets.html.haml (0.6ms)
+Rendered layouts/_head.html.haml (1.7ms)
+Rendered layouts/_header.html.haml (1.0ms)
+Rendered layouts/_flashes.html.haml (0.4ms)
+Rendered layouts/_footer.html.haml (0.3ms)
+Rendered layouts/_javascripts.html.haml (1.6ms)
+Completed 200 OK in 22ms (Views: 10.9ms | ActiveRecord: 7.5ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Sat Oct 01 22:56:29 -0400 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Log in", "remember_me"=>"1", "authenticity_token"=>"getFUzG37VXTeIsufU86T/KNl7BigpQJr1U5hKHc+yQ=", "utf8"=>"✓", "password"=>"[FILTERED]", "email"=>"thomas.fortier@gmail.com"}
+Rendered sessions/new.html.haml within layouts/application (2.3ms)
+Rendered layouts/_stylesheets.html.haml (0.5ms)
+Rendered layouts/_head.html.haml (1.6ms)
+Rendered layouts/_header.html.haml (1.1ms)
+Rendered layouts/_flashes.html.haml (0.4ms)
+Rendered layouts/_footer.html.haml (0.3ms)
+Rendered layouts/_javascripts.html.haml (1.9ms)
+Completed 200 OK in 13ms (Views: 10.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Sat Oct 01 22:56:37 -0400 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Log in", "remember_me"=>"1", "authenticity_token"=>"getFUzG37VXTeIsufU86T/KNl7BigpQJr1U5hKHc+yQ=", "utf8"=>"✓", "password"=>"[FILTERED]", "email"=>"thomas.fortier@gmail.com"}
+Rendered sessions/new.html.haml within layouts/application (2.7ms)
+Rendered layouts/_stylesheets.html.haml (0.5ms)
+Rendered layouts/_head.html.haml (1.5ms)
+Rendered layouts/_header.html.haml (0.9ms)
+Rendered layouts/_flashes.html.haml (0.4ms)
+Rendered layouts/_footer.html.haml (0.3ms)
+Rendered layouts/_javascripts.html.haml (1.8ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/signup" for 127.0.0.1 at Sat Oct 01 22:56:55 -0400 2011
+  Processing by UsersController#new as HTML
+Rendered users/new.html.haml within layouts/application (26.5ms)
+Rendered layouts/_stylesheets.html.haml (0.6ms)
+Rendered layouts/_head.html.haml (1.7ms)
+Rendered layouts/_header.html.haml (1.1ms)
+Rendered layouts/_flashes.html.haml (0.2ms)
+Rendered layouts/_footer.html.haml (0.3ms)
+Rendered layouts/_javascripts.html.haml (1.6ms)
+Completed 200 OK in 44ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Sat Oct 01 22:57:05 -0400 2011
+  Processing by UsersController#create as HTML
+  Parameters: {"commit"=>"Create User", "authenticity_token"=>"getFUzG37VXTeIsufU86T/KNl7BigpQJr1U5hKHc+yQ=", "utf8"=>"✓", "user"=>{"password_confirmation"=>"[FILTERED]", "password"=>"[FILTERED]", "email"=>"thomas.fortier@gmail.com"}}
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 327ms
+
+
+Started GET "/" for 127.0.0.1 at Sat Oct 01 22:57:05 -0400 2011
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml within layouts/application (1.6ms)
+Rendered layouts/_stylesheets.html.haml (0.6ms)
+Rendered layouts/_head.html.haml (1.8ms)
+Rendered layouts/_header.html.haml (1.0ms)
+Rendered layouts/_flashes.html.haml (0.4ms)
+Rendered layouts/_footer.html.haml (0.3ms)
+Rendered layouts/_javascripts.html.haml (1.7ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at Sat Oct 01 22:57:07 -0400 2011
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.haml within layouts/application (2.5ms)
+Rendered layouts/_stylesheets.html.haml (0.5ms)
+Rendered layouts/_head.html.haml (1.8ms)
+Rendered layouts/_header.html.haml (1.1ms)
+Rendered layouts/_flashes.html.haml (0.3ms)
+Rendered layouts/_footer.html.haml (0.3ms)
+Rendered layouts/_javascripts.html.haml (1.7ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at Sat Oct 01 22:57:09 -0400 2011
+  Processing by SessionsController#create as HTML
+  Parameters: {"commit"=>"Log in", "authenticity_token"=>"getFUzG37VXTeIsufU86T/KNl7BigpQJr1U5hKHc+yQ=", "utf8"=>"✓", "password"=>"[FILTERED]", "email"=>"thomas.fortier@gmail.com"}
+Redirected to http://0.0.0.0:3000/dashboards
+Completed 302 Found in 239ms
+
+
+Started GET "/dashboards" for 127.0.0.1 at Sat Oct 01 22:57:09 -0400 2011
+  Processing by DashboardsController#index as HTML
+Rendered dashboards/_sub1.html.haml (12.7ms)
+Rendered dashboards/_sub2.html.haml (1.5ms)
+Rendered dashboards/_sub3.html.haml (0.8ms)
+Rendered dashboards/index.html.haml within layouts/application (24.0ms)
+Rendered layouts/_stylesheets.html.haml (0.6ms)
+Rendered layouts/_head.html.haml (1.7ms)
+Rendered layouts/_header.html.haml (1.1ms)
+Rendered layouts/_flashes.html.haml (0.4ms)
+Rendered layouts/_footer.html.haml (0.3ms)
+Rendered layouts/_javascripts.html.haml (1.7ms)
+Completed 200 OK in 46ms (Views: 40.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/advisors" for 127.0.0.1 at Sat Oct 01 22:59:13 -0400 2011
+  Processing by AdvisorsController#index as HTML
+Rendered advisors/index.html.haml within layouts/application (0.2ms)
+Rendered layouts/_stylesheets.html.haml (0.6ms)
+Rendered layouts/_head.html.haml (1.9ms)
+Rendered layouts/_header.html.haml (2.6ms)
+Rendered layouts/_flashes.html.haml (0.3ms)
+Rendered layouts/_footer.html.haml (0.3ms)
+Rendered layouts/_javascripts.html.haml (1.8ms)
+Completed 200 OK in 14ms (Views: 9.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/advisors" for 127.0.0.1 at Sat Oct 01 22:59:40 -0400 2011
+  Processing by AdvisorsController#index as HTML
+Rendered advisors/index.html.haml within layouts/application (0.1ms)
+Rendered layouts/_stylesheets.html.haml (0.6ms)
+Rendered layouts/_head.html.haml (1.7ms)
+Rendered layouts/_header.html.haml (2.8ms)
+Rendered layouts/_flashes.html.haml (0.3ms)
+Rendered layouts/_footer.html.haml (0.3ms)
+Rendered layouts/_javascripts.html.haml (2.0ms)
+Completed 200 OK in 14ms (Views: 10.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/advisors" for 127.0.0.1 at Sat Oct 01 23:01:06 -0400 2011
+  Processing by AdvisorsController#index as HTML
+Rendered advisors/index.html.haml within layouts/application (0.1ms)
+Rendered layouts/_stylesheets.html.haml (0.6ms)
+Rendered layouts/_head.html.haml (1.7ms)
+Rendered layouts/_header.html.haml (2.9ms)
+Rendered layouts/_flashes.html.haml (0.3ms)
+Rendered layouts/_footer.html.haml (0.3ms)
+Rendered layouts/_javascripts.html.haml (1.7ms)
+Completed 200 OK in 14ms (Views: 9.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/advisors" for 127.0.0.1 at Sat Oct 01 23:01:14 -0400 2011
+  Processing by AdvisorsController#index as HTML
+Rendered advisors/index.html.haml within layouts/application (0.1ms)
+Rendered layouts/_stylesheets.html.haml (0.7ms)
+Rendered layouts/_head.html.haml (1.9ms)
+Rendered layouts/_header.html.haml (4.2ms)
+Rendered layouts/_flashes.html.haml (0.4ms)
+Rendered layouts/_footer.html.haml (0.3ms)
+Rendered layouts/_javascripts.html.haml (1.8ms)
+Completed 200 OK in 16ms (Views: 11.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/advisors" for 127.0.0.1 at Sat Oct 01 23:01:57 -0400 2011
+  Processing by AdvisorsController#index as HTML
+Rendered advisors/index.html.haml within layouts/application (0.2ms)
+Rendered layouts/_stylesheets.html.haml (0.7ms)
+Rendered layouts/_head.html.haml (2.0ms)
+Rendered layouts/_header.html.haml (2.6ms)
+Rendered layouts/_flashes.html.haml (0.3ms)
+Rendered layouts/_footer.html.haml (0.3ms)
+Rendered layouts/_javascripts.html.haml (1.7ms)
+Completed 200 OK in 16ms (Views: 11.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rates" for 127.0.0.1 at Sat Oct 01 23:02:28 -0400 2011
+  Processing by RatesController#index as HTML
+Rendered rates/index.html.haml within layouts/application (0.6ms)
+Rendered layouts/_stylesheets.html.haml (0.7ms)
+Rendered layouts/_head.html.haml (2.0ms)
+Rendered layouts/_header.html.haml (2.5ms)
+Rendered layouts/_flashes.html.haml (0.3ms)
+Rendered layouts/_footer.html.haml (0.3ms)
+Rendered layouts/_javascripts.html.haml (1.6ms)
+Completed 200 OK in 16ms (Views: 10.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/rates" for 127.0.0.1 at Sat Oct 01 23:03:22 -0400 2011
+  Processing by RatesController#index as HTML
+Rendered rates/index.html.haml within layouts/application (0.6ms)
+Rendered layouts/_stylesheets.html.haml (0.6ms)
+Rendered layouts/_head.html.haml (1.7ms)
+Rendered layouts/_header.html.haml (2.5ms)
+Rendered layouts/_flashes.html.haml (0.4ms)
+Rendered layouts/_footer.html.haml (0.5ms)
+Rendered layouts/_javascripts.html.haml (1.9ms)
+Completed 200 OK in 16ms (Views: 10.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/advisors" for 127.0.0.1 at Sat Oct 01 23:03:26 -0400 2011
+  Processing by AdvisorsController#index as HTML
+Rendered advisors/index.html.haml within layouts/application (0.2ms)
+Rendered layouts/_stylesheets.html.haml (0.7ms)
+Rendered layouts/_head.html.haml (2.1ms)
+Rendered layouts/_header.html.haml (3.1ms)
+Rendered layouts/_flashes.html.haml (0.4ms)
+Rendered layouts/_footer.html.haml (0.3ms)
+Rendered layouts/_javascripts.html.haml (1.8ms)
+Completed 200 OK in 35ms (Views: 10.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/advisors" for 127.0.0.1 at Sat Oct 01 23:03:49 -0400 2011
+  Processing by AdvisorsController#index as HTML
+Rendered advisors/index.html.haml within layouts/application (0.1ms)
+Rendered layouts/_stylesheets.html.haml (0.6ms)
+Rendered layouts/_head.html.haml (1.7ms)
+Rendered layouts/_header.html.haml (2.8ms)
+Rendered layouts/_flashes.html.haml (0.3ms)
+Rendered layouts/_footer.html.haml (0.3ms)
+Rendered layouts/_javascripts.html.haml (1.7ms)
+Completed 200 OK in 14ms (Views: 9.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/advisors" for 127.0.0.1 at Sat Oct 01 23:03:51 -0400 2011
+  Processing by AdvisorsController#index as HTML
+Rendered advisors/index.html.haml within layouts/application (0.2ms)
+Rendered layouts/_stylesheets.html.haml (0.6ms)
+Rendered layouts/_head.html.haml (1.8ms)
+Rendered layouts/_header.html.haml (2.6ms)
+Rendered layouts/_flashes.html.haml (0.3ms)
+Rendered layouts/_footer.html.haml (0.3ms)
+Rendered layouts/_javascripts.html.haml (1.7ms)
+Completed 200 OK in 14ms (Views: 9.5ms | ActiveRecord: 0.6ms)
