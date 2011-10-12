@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 Bank.delete_all
 #execute 'ALTER TABLE banks AUTO_INCREMENT = 1'
 AdvisorType.delete_all
