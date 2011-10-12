@@ -37,7 +37,7 @@ end
 end
 
 # Generate Advisor Qualities
-advisor_qualities = {1 => "Son professionalisme", 2 => "Son acceuil", 3 => "Sa curiosité", 4 => "Son attitude", 5 => "Sa vision"}
+advisor_qualities = {1 => "Son professionalisme", 2 => "Son acceuil", 3 => "Sa curiosity", 4 => "Son attitude", 5 => "Sa vision"}
 advisor_qualities.each do |k, quality|
   puts "--- Generate Qualities ---"
   AdvisorQuality.create :id => k, :name => quality
