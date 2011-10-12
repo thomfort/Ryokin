@@ -14,7 +14,7 @@ gem "html5-boilerplate", "~> 1.0.0"
 
 
 #group :production do
-#	gem 'therubyracer-heroku', '0.8.1.pre3' # you will need this too
+	gem 'therubyracer-heroku', '0.8.1.pre3' # you will need this too
 	gem 'pg'
 #end
 
