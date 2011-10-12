@@ -13,14 +13,14 @@ gem "compass", ">= 0.11.5"
 gem "html5-boilerplate", "~> 1.0.0"
 
 
-group :production do
-	gem 'therubyracer-heroku', '0.8.1.pre3' # you will need this too
+#group :production do
+#	gem 'therubyracer-heroku', '0.8.1.pre3' # you will need this too
 	gem 'pg'
-end
+#end
 
-group :development do
-  gem 'mysql2', '>= 0.3'
-end
+#group :development do
+#  gem 'mysql2', '>= 0.3'
+#end
 
 # Use unicorn as the web server
 # gem 'unicorn'
