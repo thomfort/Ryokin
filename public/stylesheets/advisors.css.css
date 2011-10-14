@@ -1,0 +1,28 @@
+/* line 5, ../../app/assets/stylesheets/advisors.css.scss */
+ul#advisors_list li {
+  list-style: none;
+  line-height: 2.5em;
+}
+
+/* line 10, ../../app/assets/stylesheets/advisors.css.scss */
+span.advisor_name {
+  display: inline-block;
+  width: 30%;
+}
+
+/* line 15, ../../app/assets/stylesheets/advisors.css.scss */
+span.bank_name {
+  display: inline-block;
+  width: 30%;
+}
+
+/* line 20, ../../app/assets/stylesheets/advisors.css.scss */
+span.advisor_rate {
+  display: inline-block;
+  width: 20%;
+}
+
+/* line 25, ../../app/assets/stylesheets/advisors.css.scss */
+ul.advisor_comments {
+  display: none;
+}
