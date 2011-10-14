@@ -18,9 +18,9 @@ gem "html5-boilerplate", "~> 1.0.0"
 	gem 'pg'
 #end
 
-#group :development do
-#  gem 'mysql2', '>= 0.3'
-#end
+group :development do
+  gem 'mysql2', '>= 0.3'
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'

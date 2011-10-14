@@ -5,7 +5,7 @@ AdvisorType.delete_all
 #execute 'ALTER TABLE advisor_types AUTO_INCREMENT = 1'
 Advisor.delete_all
 #execute 'ALTER TABLE advisors AUTO_INCREMENT = 1'
-Advisor.delete_all
+#AdvisorQuality.delete_all
 
 advisor_firstname = { 1 => "Lance", 2 => "Max", 3 => "Ashlee", 4 => "Cody", 5 => "Maricela" }
 advisor_lastname =  { 1 => "Billips", 2 => "Sturgell", 3 => "Chagnon", 4 => "Hanning", 5 => "Byfield" }
@@ -37,8 +37,8 @@ end
 end
 
 # Generate Advisor Qualities
-advisor_qualities = {1 => "Son professionalisme", 2 => "Son acceuil", 3 => "Sa curiosity", 4 => "Son attitude", 5 => "Sa vision"}
-advisor_qualities.each do |k, quality|
-  puts "--- Generate Qualities ---"
-  AdvisorQuality.create :id => k, :name => quality
-end
+#advisor_qualities = {1 => "Son professionalisme", 2 => "Son acceuil", 3 => "Sa curiosity", 4 => "Son attitude", 5 => "Sa vision"}
+#advisor_qualities.each do |k, quality|
+#  puts "--- Generate Qualities ---"
+#  AdvisorQuality.create :id => k, :name => quality
+#end
