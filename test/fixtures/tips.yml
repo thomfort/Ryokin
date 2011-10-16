@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  advisor_id: 1
+  title: MyString
+  tip: MyText
+
+two:
+  advisor_id: 1
+  title: MyString
+  tip: MyText

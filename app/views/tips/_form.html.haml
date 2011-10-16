@@ -1,0 +1,34 @@
+= form_for @tip do |f|
+	- if @tip.errors.any?
+		%section#alerts
+			.row
+				.span16.columns
+					.alert-message.error
+						%a.close
+							x
+						%p
+							%strong
+								= pluralize(@tip.errors.count, "error")
+								prohibited this tip from being saved:
+							- @tip.errors.full_messages.each do |msg|
+								%p
+									= msg
+
+	.field.clearfix
+		= f.label :advisor_id
+		.input
+			= collection_select :advisor, :advisor_id, Advisor.find(:all), :id, :lastname
+
+	.field.clearfix
+		= f.label :title
+		.input
+			= f.text_field :title
+	
+	.field.clearfix
+		= f.label :tip
+		.input
+			= f.text_area :tip
+
+
+	.actions
+		= f.submit :class => 'btn primary'

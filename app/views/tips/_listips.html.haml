@@ -1,0 +1,14 @@
+.page-header
+	%h1 Tip of the week
+
+- tip = listip	
+.row
+	.span16
+		#tip		
+			%h3
+				= tip.title 
+				%small 
+					= " by "
+					%em
+						= Advisor.find(tip).firstname
+			= tip.tip
