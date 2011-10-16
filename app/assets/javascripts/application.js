@@ -4,5 +4,5 @@
 //= require_tree .
 
 $(".view_comment").bind('click', function() {
-	$(this, '.advisor_comments').next().toggle();
+	$(this, '.advisor_comments').next().slideToggle('slow');
 });

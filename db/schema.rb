@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111011020323) do
+ActiveRecord::Schema.define(:version => 20111015224854) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer  "resource_id",   :null => false
@@ -132,6 +132,14 @@ ActiveRecord::Schema.define(:version => 20111011020323) do
   end
 
   add_index "ratings", ["rateable_id", "rateable_type"], :name => "index_ratings_on_rateable_id_and_rateable_type"
+
+  create_table "tips", :force => true do |t|
+    t.integer  "advisor_id"
+    t.string   "title"
+    t.text     "tip"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "user_ratings", :force => true do |t|
     t.integer  "rating_id"
