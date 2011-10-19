@@ -32,8 +32,9 @@ class AdvisorsController < ApplicationController
   end
   
   def add_comment
-    @advisor = Advisor.find(params[:commentable][:commentable_id])
-    body_comment = params[:advisor][:comment]
+    puts "---------------------> #{params[:commentable_id]}"
+    @advisor = Advisor.find(params[:commentable_id])
+    body_comment = params[:comment]
     begin
       @advisor.comments.create( :title => "Title comment", 
                                 :comment => body_comment,
@@ -41,7 +42,7 @@ class AdvisorsController < ApplicationController
     rescue
       redirect_to advisors_url, :notice => "Error when inserting comment for #{@advisor.firstname}!"
     else
-      redirect_to advisors_url, :notice => "Comment was successfully added for #{@advisor.firstname}."
+      redirect_to root_url, :notice => "Comment was successfully added for #{@advisor.firstname}."
     end
       
   end

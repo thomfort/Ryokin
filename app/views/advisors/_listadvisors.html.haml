@@ -5,21 +5,34 @@
 	.span16
 		%ul#advisors_list
 			- @advisors = Advisor.all
-			- @advisors.each do |advisor|
-				%li
+			- @advisors.each do |advisor|				
+				%li					
 					%span.advisor_name
 						= link_to advisor.lastname + " " + advisor.firstname, advisor
-					%span.bank_name
-						= Bank.find(advisor.bank).name
+						%span.bank_name
+							= " from " + Bank.find(advisor.bank).name
 					%span.advisor_rate
 						- (advisor.average_rating_round).times do
 							= image_tag "star.png"
-					%span.view_comment
+					%span.view_comment{:class => 'pull-right'}
 						- comments = advisor.comments.recent.limit(10).all
 						= "View comments ( #{comments.count} )"
-					%ul.advisor_comments
-						- comments.each do |comment|
-							%li
-								= comment.comment
-		%br
-		= link_to 'New Advisor', new_advisor_path, :class => "btn primary"
+					.advisor_comments
+						%ul
+							- comments.each do |comment|
+								%li
+									= comment.comment
+						%a{:class => 'btn primary pull-right btnAddComment', :id => 'advisor_click_'+advisor.id.to_s}
+							= "Add comments"
+						.clearfix
+
+	#commentform
+		= form_tag 'advisors/add_comment' do
+			= hidden_field_tag 'commentable', 'commentable', :value => 'Advisor'
+			= hidden_field_tag 'commentable_id', 'commentable_id'
+			.field.clearfix				
+				= label_tag 'Comment'
+				.input
+					= text_area_tag 'comment', nil, :class => 'largeText'
+			.actions
+				= submit_tag 'Save', :class => "btn primary"

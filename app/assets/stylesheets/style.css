@@ -169,14 +169,14 @@ button::-moz-focus-inner {
 
 /* line 99, ../../../../../../../../Library/Ruby/Gems/1.8/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
 ::-moz-selection {
-  background: #ff5e99;
+  background: #7dbaf3;
   color: white;
   text-shadow: none;
 }
 
 /* line 100, ../../../../../../../../Library/Ruby/Gems/1.8/gems/html5-boilerplate-1.0.0/stylesheets/html5-boilerplate/_styles.scss */
 ::selection {
-  background: #ff5e99;
+  background: #7dbaf3;
   color: white;
   text-shadow: none;
 }

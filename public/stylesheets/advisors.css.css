@@ -1,28 +1,119 @@
-/* line 5, ../../app/assets/stylesheets/advisors.css.scss */
+/* line 6, ../../app/assets/stylesheets/advisors.css.scss */
 ul#advisors_list li {
   list-style: none;
   line-height: 2.5em;
 }
 
-/* line 10, ../../app/assets/stylesheets/advisors.css.scss */
+/* line 11, ../../app/assets/stylesheets/advisors.css.scss */
+ul#advisors_list li a:link {
+  color: #0069d6;
+}
+
+/* line 15, ../../app/assets/stylesheets/advisors.css.scss */
+ul#advisors_list li a:visited {
+  color: #0069d6;
+}
+
+/* line 19, ../../app/assets/stylesheets/advisors.css.scss */
 span.advisor_name {
   display: inline-block;
   width: 30%;
 }
 
-/* line 15, ../../app/assets/stylesheets/advisors.css.scss */
+/* line 24, ../../app/assets/stylesheets/advisors.css.scss */
 span.bank_name {
+  font-style: italic;
+  font-size: 11px;
+}
+
+/* line 30, ../../app/assets/stylesheets/advisors.css.scss */
+span.advisor_rate {
   display: inline-block;
+  text-align: right;
   width: 30%;
 }
 
-/* line 20, ../../app/assets/stylesheets/advisors.css.scss */
-span.advisor_rate {
+/* line 36, ../../app/assets/stylesheets/advisors.css.scss */
+span.view_comment {
   display: inline-block;
-  width: 20%;
+  width: 30%;
+  text-align: right;
 }
 
-/* line 25, ../../app/assets/stylesheets/advisors.css.scss */
-ul.advisor_comments {
+/* line 42, ../../app/assets/stylesheets/advisors.css.scss */
+div.advisor_comments {
   display: none;
+  margin-bottom: 15px;
+}
+
+/* line 47, ../../app/assets/stylesheets/advisors.css.scss */
+div#commentform {
+  display: none;
+}
+
+/* line 51, ../../app/assets/stylesheets/advisors.css.scss */
+#basic-modal-content {
+  display: none;
+}
+
+/* Overlay */
+/* line 54, ../../app/assets/stylesheets/advisors.css.scss */
+#simplemodal-overlay {
+  background-color: #000;
+  cursor: wait;
+}
+
+/* Container */
+/* line 57, ../../app/assets/stylesheets/advisors.css.scss */
+#simplemodal-container {
+  height: 250px;
+  width: 600px;
+  color: #bbb;
+  background-color: #FFF;
+  border: 2px solid #CCC;
+  padding: 12px;
+}
+
+/* line 58, ../../app/assets/stylesheets/advisors.css.scss */
+#simplemodal-container .simplemodal-data {
+  padding: 8px;
+}
+
+/* line 59, ../../app/assets/stylesheets/advisors.css.scss */
+#simplemodal-container code {
+  background: #141414;
+  border-left: 3px solid #65B43D;
+  color: #bbb;
+  display: block;
+  font-size: 12px;
+  margin-bottom: 12px;
+  padding: 4px 6px 6px;
+}
+
+/* line 60, ../../app/assets/stylesheets/advisors.css.scss */
+#simplemodal-container a {
+  color: #ddd;
+}
+
+/* line 61, ../../app/assets/stylesheets/advisors.css.scss */
+#simplemodal-container a.modalCloseImg {
+  background: url(../img/basic/x.png) no-repeat;
+  width: 25px;
+  height: 29px;
+  display: inline;
+  z-index: 3200;
+  position: absolute;
+  top: -15px;
+  right: -16px;
+  cursor: pointer;
+}
+
+/* line 62, ../../app/assets/stylesheets/advisors.css.scss */
+#simplemodal-container h3 {
+  color: #84b8d9;
+}
+
+/* line 64, ../../app/assets/stylesheets/advisors.css.scss */
+textarea.largeText {
+  width: 400px;
 }
