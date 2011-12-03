@@ -5,7 +5,8 @@ Ryokin::Application.routes.draw do
 
 #  get "advisors/index"
 
-#  get "advisor/index"
+  get "advisors/add_comment" => "advisors#add_comment"
+  #devise_for :advisors, :controllers => { :sessions => "admins/sessions" }
 
   get "logout" => "sessions#destroy", :as => "logout"
   get "login" => "sessions#new", :as => "login"
@@ -25,7 +26,7 @@ Ryokin::Application.routes.draw do
   
   resources :dashboards
   
-  resources :advisors
+  resources :advisors 
   
   resources :tips
   

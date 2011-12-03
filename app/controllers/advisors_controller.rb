@@ -1,4 +1,5 @@
 class AdvisorsController < ApplicationController
+  respond_to :html, :xml, :json
   def index
     @advisors = Advisor.all
 
@@ -32,19 +33,22 @@ class AdvisorsController < ApplicationController
   end
   
   def add_comment
-    puts "---------------------> #{params[:commentable_id]}"
     @advisor = Advisor.find(params[:commentable_id])
     body_comment = params[:comment]
-    begin
-      @advisor.comments.create( :title => "Title comment", 
-                                :comment => body_comment,
-                                :user => current_user)
-    rescue
-      redirect_to advisors_url, :notice => "Error when inserting comment for #{@advisor.firstname}!"
-    else
-      redirect_to root_url, :notice => "Comment was successfully added for #{@advisor.firstname}."
+    
+    @comment = @advisor.comments.new( :title => "Title comment", :comment => body_comment, :user => current_user)
+    
+    if @comment.save
+      respond_with do |format|
+        format.html do
+          if request.xhr?
+            #redirect_to root_url
+          else
+            redirect_to root_url, :notice => "Comment added for #{@advisor.firstname}!"          
+          end
+        end
+      end
     end
-      
   end
   
   def create

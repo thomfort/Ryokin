@@ -459,3 +459,751 @@ Rendered layouts/_flashes.html.haml (0.3ms)
 Rendered layouts/_footer.html.haml (0.3ms)
 Rendered layouts/_javascripts.html.haml (1.7ms)
 Completed 200 OK in 14ms (Views: 9.5ms | ActiveRecord: 0.6ms)
+Compiled excanvas.compiled.js  (0ms)  (pid 611)
+Compiled jquery-ui.min.js  (2ms)  (pid 611)
+Compiled jquery.min.js  (0ms)  (pid 611)
+Compiled jquery.simplemodal.1.4.1.min.js  (0ms)  (pid 611)
+Compiled modernizr.min.js  (0ms)  (pid 611)
+Compiled respond.min.js  (0ms)  (pid 611)
+Compiled bootstrap-1.1.0.css  (0ms)  (pid 611)
+Compiled excanvas.compiled.js  (0ms)  (pid 634)
+Compiled jquery-ui.min.js  (1ms)  (pid 634)
+Compiled jquery.min.js  (0ms)  (pid 634)
+Compiled jquery.simplemodal.1.4.1.min.js  (0ms)  (pid 634)
+Compiled modernizr.min.js  (0ms)  (pid 634)
+Compiled respond.min.js  (0ms)  (pid 634)
+Compiled bootstrap.min.css  (0ms)  (pid 658)
+Compiled application.js  (5ms)  (pid 658)
+Compiled jquery.js  (3ms)  (pid 658)
+Compiled jquery_ujs.js  (0ms)  (pid 658)
+Compiled active_admin.js  (1ms)  (pid 658)
+Compiled active_admin/base.js  (3ms)  (pid 658)
+Compiled active_admin/vendor.js  (2ms)  (pid 658)
+Compiled advisors.js  (58ms)  (pid 658)
+Compiled highcharts.js  (1ms)  (pid 658)
+Compiled jquery-ui.js  (51ms)  (pid 658)
+Compiled plugins.js  (0ms)  (pid 658)
+Compiled rails.js  (0ms)  (pid 658)
+Compiled sessions.js  (0ms)  (pid 658)
+Compiled tips.js  (0ms)  (pid 658)
+Compiled users.js  (0ms)  (pid 658)
+Compiled application.css  (2ms)  (pid 658)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:08:15 -0500 2011
+
+Sass::SyntaxError (File to import not found or unreadable: active_admin/mixins.
+Load paths:
+  Compass::SpriteImporter
+  /Users/thomasfortier/Sites/Ryokin/public/stylesheets/sass
+  /Users/thomasfortier/Sites/Ryokin/app/assets/stylesheets
+  /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets
+  /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets
+  /Library/Ruby/Gems/1.8/gems/html5-boilerplate-1.0.0/stylesheets):
+  app/assets/stylesheets/active_admin.css.scss:2
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:08:16 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (5.4ms)
+Rendered home/index.html.haml within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (Mysql2::Error: Table 'ryokin_production.tips' doesn't exist: SHOW FIELDS FROM `tips`):
+    1: .page-header
+    2: 	%h1 Tip of the week
+    3: 
+    4: - tip = listip	
+    5: .row
+    6: 	.span16
+    7: 		#tip		
+  app/helpers/tips_helper.rb:4:in `listip'
+  app/views/tips/_listips.html.haml:4:in `_app_views_tips__listips_html_haml___72410913_2283680140'
+  app/views/home/index.html.haml:2:in `_app_views_home_index_html_haml__1756944457_2283748500'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:08:16 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (1.6ms)
+Rendered home/index.html.haml within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (Mysql2::Error: Table 'ryokin_production.tips' doesn't exist: SHOW FIELDS FROM `tips`):
+    1: .page-header
+    2: 	%h1 Tip of the week
+    3: 
+    4: - tip = listip	
+    5: .row
+    6: 	.span16
+    7: 		#tip		
+  app/helpers/tips_helper.rb:4:in `listip'
+  app/views/tips/_listips.html.haml:4:in `_app_views_tips__listips_html_haml___72410913_2283680140'
+  app/views/home/index.html.haml:2:in `_app_views_home_index_html_haml__1756944457_2283748500'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.7ms)
+Migrating to CreateBanks (20110826015420)
+Migrating to CreateRates (20110826020211)
+Migrating to CreateCategoryRateTypes (20110826020347)
+Migrating to CreateRateTypes (20110826020428)
+Migrating to CreateCategories (20110826020507)
+Migrating to CreateDashboards (20110831031231)
+Migrating to SorceryCore (20110918201614)
+Migrating to SorceryRememberMe (20110918201615)
+Migrating to SorceryResetPassword (20110918201616)
+Migrating to SorceryActivityLogging (20110918201617)
+Migrating to CreateAdvisors (20110920024103)
+Migrating to CreateAdvisorTypes (20110920034527)
+Migrating to CreateRatings (20110921023629)
+Migrating to CreateAdminNotes (20110922231812)
+Migrating to MoveAdminNotesToComments (20110922231813)
+Migrating to CreateComments (20110923025040)
+Migrating to DeviseCreateAdminUsers (20110923031805)
+Migrating to CreateTips (20111015224854)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:11:25 -0500 2011
+
+Sass::SyntaxError (File to import not found or unreadable: active_admin/mixins.
+Load paths:
+  Compass::SpriteImporter
+  /Users/thomasfortier/Sites/Ryokin/public/stylesheets/sass
+  /Users/thomasfortier/Sites/Ryokin/app/assets/stylesheets
+  /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets
+  /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets
+  /Library/Ruby/Gems/1.8/gems/html5-boilerplate-1.0.0/stylesheets):
+  app/assets/stylesheets/active_admin.css.scss:2
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:11:25 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (10.5ms)
+Rendered home/index.html.haml within layouts/application (13.3ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    6: 	.span16
+    7: 		#tip		
+    8: 			%h3
+    9: 				= tip.title 
+    10: 				%small 
+    11: 					= " by "
+    12: 					%em
+  app/views/tips/_listips.html.haml:9:in `_app_views_tips__listips_html_haml___72410913_2204162960'
+  app/views/home/index.html.haml:2:in `_app_views_home_index_html_haml__1756944457_2204231720'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:11:26 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (1.3ms)
+Rendered home/index.html.haml within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    6: 	.span16
+    7: 		#tip		
+    8: 			%h3
+    9: 				= tip.title 
+    10: 				%small 
+    11: 					= " by "
+    12: 					%em
+  app/views/tips/_listips.html.haml:9:in `_app_views_tips__listips_html_haml___72410913_2204162960'
+  app/views/home/index.html.haml:2:in `_app_views_home_index_html_haml__1756944457_2204231720'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:11:27 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (1.3ms)
+Rendered home/index.html.haml within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    6: 	.span16
+    7: 		#tip		
+    8: 			%h3
+    9: 				= tip.title 
+    10: 				%small 
+    11: 					= " by "
+    12: 					%em
+  app/views/tips/_listips.html.haml:9:in `_app_views_tips__listips_html_haml___72410913_2204162960'
+  app/views/home/index.html.haml:2:in `_app_views_home_index_html_haml__1756944457_2204231720'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (47.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (49.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:11:27 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (1.3ms)
+Rendered home/index.html.haml within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    6: 	.span16
+    7: 		#tip		
+    8: 			%h3
+    9: 				= tip.title 
+    10: 				%small 
+    11: 					= " by "
+    12: 					%em
+  app/views/tips/_listips.html.haml:9:in `_app_views_tips__listips_html_haml___72410913_2204162960'
+  app/views/home/index.html.haml:2:in `_app_views_home_index_html_haml__1756944457_2204231720'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:11:28 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (1.5ms)
+Rendered home/index.html.haml within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    6: 	.span16
+    7: 		#tip		
+    8: 			%h3
+    9: 				= tip.title 
+    10: 				%small 
+    11: 					= " by "
+    12: 					%em
+  app/views/tips/_listips.html.haml:9:in `_app_views_tips__listips_html_haml___72410913_2204162960'
+  app/views/home/index.html.haml:2:in `_app_views_home_index_html_haml__1756944457_2204231720'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:11:28 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (1.4ms)
+Rendered home/index.html.haml within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    6: 	.span16
+    7: 		#tip		
+    8: 			%h3
+    9: 				= tip.title 
+    10: 				%small 
+    11: 					= " by "
+    12: 					%em
+  app/views/tips/_listips.html.haml:9:in `_app_views_tips__listips_html_haml___72410913_2204162960'
+  app/views/home/index.html.haml:2:in `_app_views_home_index_html_haml__1756944457_2204231720'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:11:28 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (1.4ms)
+Rendered home/index.html.haml within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 2ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    6: 	.span16
+    7: 		#tip		
+    8: 			%h3
+    9: 				= tip.title 
+    10: 				%small 
+    11: 					= " by "
+    12: 					%em
+  app/views/tips/_listips.html.haml:9:in `_app_views_tips__listips_html_haml___72410913_2204162960'
+  app/views/home/index.html.haml:2:in `_app_views_home_index_html_haml__1756944457_2204231720'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:13:25 -0500 2011
+
+Sass::SyntaxError (File to import not found or unreadable: active_admin/mixins.
+Load paths:
+  Compass::SpriteImporter
+  /Users/thomasfortier/Sites/Ryokin/public/stylesheets/sass
+  /Users/thomasfortier/Sites/Ryokin/app/assets/stylesheets
+  /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets
+  /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets
+  /Library/Ruby/Gems/1.8/gems/html5-boilerplate-1.0.0/stylesheets):
+  app/assets/stylesheets/active_admin.css.scss:2
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:13:26 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (22.9ms)
+Rendered advisors/_listadvisors.html.haml (105.0ms)
+Rendered home/index.html.haml within layouts/application (131.7ms)
+Completed 500 Internal Server Error in 137ms
+
+ActionView::Template::Error (undefined method `-@' for #<String:0x1082a1030>):
+    28: 
+    29: 	#commentform
+    30: 		= form_tag '/advisors/add_comment', :remote =>true, :method => 'get', :'data-type' => 'html', :id => "createComments" do - 
+    31: 			= hidden_field_tag 'commentable', 'commentable', :value => 'Advisor'
+    32: 			= hidden_field_tag 'commentable_id', 'commentable_id'
+    33: 			.field.clearfix				
+    34: 				= label_tag 'Comment'
+  app/views/advisors/_listadvisors.html.haml:31:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/advisors/_listadvisors.html.haml:30:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/home/index.html.haml:5:in `_app_views_home_index_html_haml__1756944457_2216939560'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:13:26 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (1.5ms)
+Rendered advisors/_listadvisors.html.haml (70.6ms)
+Rendered home/index.html.haml within layouts/application (72.5ms)
+Completed 500 Internal Server Error in 73ms
+
+ActionView::Template::Error (undefined method `-@' for #<String:0x1081de3f0>):
+    28: 
+    29: 	#commentform
+    30: 		= form_tag '/advisors/add_comment', :remote =>true, :method => 'get', :'data-type' => 'html', :id => "createComments" do - 
+    31: 			= hidden_field_tag 'commentable', 'commentable', :value => 'Advisor'
+    32: 			= hidden_field_tag 'commentable_id', 'commentable_id'
+    33: 			.field.clearfix				
+    34: 				= label_tag 'Comment'
+  app/views/advisors/_listadvisors.html.haml:31:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/advisors/_listadvisors.html.haml:30:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/home/index.html.haml:5:in `_app_views_home_index_html_haml__1756944457_2216939560'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:13:27 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (1.6ms)
+Rendered advisors/_listadvisors.html.haml (20.0ms)
+Rendered home/index.html.haml within layouts/application (22.0ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined method `-@' for #<String:0x1083173c0>):
+    28: 
+    29: 	#commentform
+    30: 		= form_tag '/advisors/add_comment', :remote =>true, :method => 'get', :'data-type' => 'html', :id => "createComments" do - 
+    31: 			= hidden_field_tag 'commentable', 'commentable', :value => 'Advisor'
+    32: 			= hidden_field_tag 'commentable_id', 'commentable_id'
+    33: 			.field.clearfix				
+    34: 				= label_tag 'Comment'
+  app/views/advisors/_listadvisors.html.haml:31:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/advisors/_listadvisors.html.haml:30:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/home/index.html.haml:5:in `_app_views_home_index_html_haml__1756944457_2216939560'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:13:28 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (1.8ms)
+Rendered advisors/_listadvisors.html.haml (17.9ms)
+Rendered home/index.html.haml within layouts/application (20.1ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `-@' for #<String:0x1084ecdd0>):
+    28: 
+    29: 	#commentform
+    30: 		= form_tag '/advisors/add_comment', :remote =>true, :method => 'get', :'data-type' => 'html', :id => "createComments" do - 
+    31: 			= hidden_field_tag 'commentable', 'commentable', :value => 'Advisor'
+    32: 			= hidden_field_tag 'commentable_id', 'commentable_id'
+    33: 			.field.clearfix				
+    34: 				= label_tag 'Comment'
+  app/views/advisors/_listadvisors.html.haml:31:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/advisors/_listadvisors.html.haml:30:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/home/index.html.haml:5:in `_app_views_home_index_html_haml__1756944457_2216939560'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:13:29 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (1.6ms)
+Rendered advisors/_listadvisors.html.haml (72.1ms)
+Rendered home/index.html.haml within layouts/application (74.1ms)
+Completed 500 Internal Server Error in 75ms
+
+ActionView::Template::Error (undefined method `-@' for #<String:0x108199fc0>):
+    28: 
+    29: 	#commentform
+    30: 		= form_tag '/advisors/add_comment', :remote =>true, :method => 'get', :'data-type' => 'html', :id => "createComments" do - 
+    31: 			= hidden_field_tag 'commentable', 'commentable', :value => 'Advisor'
+    32: 			= hidden_field_tag 'commentable_id', 'commentable_id'
+    33: 			.field.clearfix				
+    34: 				= label_tag 'Comment'
+  app/views/advisors/_listadvisors.html.haml:31:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/advisors/_listadvisors.html.haml:30:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/home/index.html.haml:5:in `_app_views_home_index_html_haml__1756944457_2216939560'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (2.9ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:13:29 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (1.6ms)
+Rendered advisors/_listadvisors.html.haml (18.1ms)
+Rendered home/index.html.haml within layouts/application (20.0ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `-@' for #<String:0x1083175f0>):
+    28: 
+    29: 	#commentform
+    30: 		= form_tag '/advisors/add_comment', :remote =>true, :method => 'get', :'data-type' => 'html', :id => "createComments" do - 
+    31: 			= hidden_field_tag 'commentable', 'commentable', :value => 'Advisor'
+    32: 			= hidden_field_tag 'commentable_id', 'commentable_id'
+    33: 			.field.clearfix				
+    34: 				= label_tag 'Comment'
+  app/views/advisors/_listadvisors.html.haml:31:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/advisors/_listadvisors.html.haml:30:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/home/index.html.haml:5:in `_app_views_home_index_html_haml__1756944457_2216939560'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (52.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (55.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:13:29 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (1.8ms)
+Rendered advisors/_listadvisors.html.haml (19.7ms)
+Rendered home/index.html.haml within layouts/application (21.9ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (undefined method `-@' for #<String:0x1085ada80>):
+    28: 
+    29: 	#commentform
+    30: 		= form_tag '/advisors/add_comment', :remote =>true, :method => 'get', :'data-type' => 'html', :id => "createComments" do - 
+    31: 			= hidden_field_tag 'commentable', 'commentable', :value => 'Advisor'
+    32: 			= hidden_field_tag 'commentable_id', 'commentable_id'
+    33: 			.field.clearfix				
+    34: 				= label_tag 'Comment'
+  app/views/advisors/_listadvisors.html.haml:31:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/advisors/_listadvisors.html.haml:30:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/home/index.html.haml:5:in `_app_views_home_index_html_haml__1756944457_2216939560'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:13:30 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (1.7ms)
+Rendered advisors/_listadvisors.html.haml (70.8ms)
+Rendered home/index.html.haml within layouts/application (72.9ms)
+Completed 500 Internal Server Error in 74ms
+
+ActionView::Template::Error (undefined method `-@' for #<String:0x108254910>):
+    28: 
+    29: 	#commentform
+    30: 		= form_tag '/advisors/add_comment', :remote =>true, :method => 'get', :'data-type' => 'html', :id => "createComments" do - 
+    31: 			= hidden_field_tag 'commentable', 'commentable', :value => 'Advisor'
+    32: 			= hidden_field_tag 'commentable_id', 'commentable_id'
+    33: 			.field.clearfix				
+    34: 				= label_tag 'Comment'
+  app/views/advisors/_listadvisors.html.haml:31:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/advisors/_listadvisors.html.haml:30:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/home/index.html.haml:5:in `_app_views_home_index_html_haml__1756944457_2216939560'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:13:30 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (1.8ms)
+Rendered advisors/_listadvisors.html.haml (17.9ms)
+Rendered home/index.html.haml within layouts/application (20.1ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `-@' for #<String:0x108370bc8>):
+    28: 
+    29: 	#commentform
+    30: 		= form_tag '/advisors/add_comment', :remote =>true, :method => 'get', :'data-type' => 'html', :id => "createComments" do - 
+    31: 			= hidden_field_tag 'commentable', 'commentable', :value => 'Advisor'
+    32: 			= hidden_field_tag 'commentable_id', 'commentable_id'
+    33: 			.field.clearfix				
+    34: 				= label_tag 'Comment'
+  app/views/advisors/_listadvisors.html.haml:31:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/advisors/_listadvisors.html.haml:30:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/home/index.html.haml:5:in `_app_views_home_index_html_haml__1756944457_2216939560'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.1ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:13:30 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (51.5ms)
+Rendered advisors/_listadvisors.html.haml (19.3ms)
+Rendered home/index.html.haml within layouts/application (71.2ms)
+Completed 500 Internal Server Error in 72ms
+
+ActionView::Template::Error (undefined method `-@' for #<String:0x108600028>):
+    28: 
+    29: 	#commentform
+    30: 		= form_tag '/advisors/add_comment', :remote =>true, :method => 'get', :'data-type' => 'html', :id => "createComments" do - 
+    31: 			= hidden_field_tag 'commentable', 'commentable', :value => 'Advisor'
+    32: 			= hidden_field_tag 'commentable_id', 'commentable_id'
+    33: 			.field.clearfix				
+    34: 				= label_tag 'Comment'
+  app/views/advisors/_listadvisors.html.haml:31:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/advisors/_listadvisors.html.haml:30:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/home/index.html.haml:5:in `_app_views_home_index_html_haml__1756944457_2216939560'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (4.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:13:30 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (1.9ms)
+Rendered advisors/_listadvisors.html.haml (72.2ms)
+Rendered home/index.html.haml within layouts/application (74.5ms)
+Completed 500 Internal Server Error in 75ms
+
+ActionView::Template::Error (undefined method `-@' for #<String:0x108297cd8>):
+    28: 
+    29: 	#commentform
+    30: 		= form_tag '/advisors/add_comment', :remote =>true, :method => 'get', :'data-type' => 'html', :id => "createComments" do - 
+    31: 			= hidden_field_tag 'commentable', 'commentable', :value => 'Advisor'
+    32: 			= hidden_field_tag 'commentable_id', 'commentable_id'
+    33: 			.field.clearfix				
+    34: 				= label_tag 'Comment'
+  app/views/advisors/_listadvisors.html.haml:31:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/advisors/_listadvisors.html.haml:30:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/home/index.html.haml:5:in `_app_views_home_index_html_haml__1756944457_2216939560'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:13:30 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (1.6ms)
+Rendered advisors/_listadvisors.html.haml (18.4ms)
+Rendered home/index.html.haml within layouts/application (20.4ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `-@' for #<String:0x1083b4648>):
+    28: 
+    29: 	#commentform
+    30: 		= form_tag '/advisors/add_comment', :remote =>true, :method => 'get', :'data-type' => 'html', :id => "createComments" do - 
+    31: 			= hidden_field_tag 'commentable', 'commentable', :value => 'Advisor'
+    32: 			= hidden_field_tag 'commentable_id', 'commentable_id'
+    33: 			.field.clearfix				
+    34: 				= label_tag 'Comment'
+  app/views/advisors/_listadvisors.html.haml:31:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/advisors/_listadvisors.html.haml:30:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/home/index.html.haml:5:in `_app_views_home_index_html_haml__1756944457_2216939560'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:13:57 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (1.7ms)
+Rendered advisors/_listadvisors.html.haml (72.3ms)
+Rendered home/index.html.haml within layouts/application (74.4ms)
+Completed 500 Internal Server Error in 75ms
+
+ActionView::Template::Error (undefined method `-@' for #<String:0x1080d6d68>):
+    28: 
+    29: 	#commentform
+    30: 		= form_tag '/advisors/add_comment', :remote =>true, :method => 'get', :'data-type' => 'html', :id => "createComments" do 
+    31: 			= hidden_field_tag 'commentable', 'commentable', :value => 'Advisor'
+    32: 			= hidden_field_tag 'commentable_id', 'commentable_id'
+    33: 			.field.clearfix				
+    34: 				= label_tag 'Comment'
+  app/views/advisors/_listadvisors.html.haml:31:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/advisors/_listadvisors.html.haml:30:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/home/index.html.haml:5:in `_app_views_home_index_html_haml__1756944457_2216939560'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:13:58 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (1.6ms)
+Rendered advisors/_listadvisors.html.haml (68.3ms)
+Rendered home/index.html.haml within layouts/application (70.2ms)
+Completed 500 Internal Server Error in 71ms
+
+ActionView::Template::Error (undefined method `-@' for #<String:0x1082c9940>):
+    28: 
+    29: 	#commentform
+    30: 		= form_tag '/advisors/add_comment', :remote =>true, :method => 'get', :'data-type' => 'html', :id => "createComments" do 
+    31: 			= hidden_field_tag 'commentable', 'commentable', :value => 'Advisor'
+    32: 			= hidden_field_tag 'commentable_id', 'commentable_id'
+    33: 			.field.clearfix				
+    34: 				= label_tag 'Comment'
+  app/views/advisors/_listadvisors.html.haml:31:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/advisors/_listadvisors.html.haml:30:in `_app_views_advisors__listadvisors_html_haml__1266541903_2216252280'
+  app/views/home/index.html.haml:5:in `_app_views_home_index_html_haml__1756944457_2216939560'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:14:18 -0500 2011
+
+Sass::SyntaxError (File to import not found or unreadable: active_admin/mixins.
+Load paths:
+  Compass::SpriteImporter
+  /Users/thomasfortier/Sites/Ryokin/public/stylesheets/sass
+  /Users/thomasfortier/Sites/Ryokin/app/assets/stylesheets
+  /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/blueprint/stylesheets
+  /Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets
+  /Library/Ruby/Gems/1.8/gems/html5-boilerplate-1.0.0/stylesheets):
+  app/assets/stylesheets/active_admin.css.scss:2
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:14:18 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (24.1ms)
+Rendered advisors/_listadvisors.html.haml (108.0ms)
+Rendered home/index.html.haml within layouts/application (136.1ms)
+Rendered layouts/_stylesheets.html.haml (1.6ms)
+Rendered layouts/_head.html.haml (5.2ms)
+Completed 500 Internal Server Error in 153ms
+
+ActionView::Template::Error (style.css isn't precompiled):
+    1: -# CSS: implied media="all"
+    2: = stylesheet_link_tag 'style', :media => 'all'
+    3: = stylesheet_link_tag 'advisors', :media => 'all'
+    4: 
+    5: -# Append your own using content_for :stylesheets
+  app/views/layouts/_stylesheets.html.haml:2:in `_app_views_layouts__stylesheets_html_haml__1091126864_2274947400'
+  app/views/layouts/_head.html.haml:20:in `_app_views_layouts__head_html_haml___2098118170_2275136140'
+  app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___628226575_2275348860'
+  app/views/layouts/application.html.haml:3:in `_app_views_layouts_application_html_haml___628226575_2275348860'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:14:19 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (1.5ms)
+Rendered advisors/_listadvisors.html.haml (19.0ms)
+Rendered home/index.html.haml within layouts/application (20.8ms)
+Rendered layouts/_stylesheets.html.haml (0.8ms)
+Rendered layouts/_head.html.haml (1.0ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (style.css isn't precompiled):
+    1: -# CSS: implied media="all"
+    2: = stylesheet_link_tag 'style', :media => 'all'
+    3: = stylesheet_link_tag 'advisors', :media => 'all'
+    4: 
+    5: -# Append your own using content_for :stylesheets
+  app/views/layouts/_stylesheets.html.haml:2:in `_app_views_layouts__stylesheets_html_haml__1091126864_2274947400'
+  app/views/layouts/_head.html.haml:20:in `_app_views_layouts__head_html_haml___2098118170_2275136140'
+  app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___628226575_2275348860'
+  app/views/layouts/application.html.haml:3:in `_app_views_layouts_application_html_haml___628226575_2275348860'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Sun Nov 13 19:14:20 -0500 2011
+  Processing by HomeController#index as HTML
+Rendered tips/_listips.html.haml (1.6ms)
+Rendered advisors/_listadvisors.html.haml (69.8ms)
+Rendered home/index.html.haml within layouts/application (71.7ms)
+Rendered layouts/_stylesheets.html.haml (1.0ms)
+Rendered layouts/_head.html.haml (1.3ms)
+Completed 500 Internal Server Error in 75ms
+
+ActionView::Template::Error (style.css isn't precompiled):
+    1: -# CSS: implied media="all"
+    2: = stylesheet_link_tag 'style', :media => 'all'
+    3: = stylesheet_link_tag 'advisors', :media => 'all'
+    4: 
+    5: -# Append your own using content_for :stylesheets
+  app/views/layouts/_stylesheets.html.haml:2:in `_app_views_layouts__stylesheets_html_haml__1091126864_2274947400'
+  app/views/layouts/_head.html.haml:20:in `_app_views_layouts__head_html_haml___2098118170_2275136140'
+  app/views/layouts/application.html.haml:7:in `_app_views_layouts_application_html_haml___628226575_2275348860'
+  app/views/layouts/application.html.haml:3:in `_app_views_layouts_application_html_haml___628226575_2275348860'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (3.2ms)
+Compiled excanvas.compiled.js  (0ms)  (pid 714)
+Compiled jquery-ui.min.js  (2ms)  (pid 714)
+Compiled jquery.min.js  (1ms)  (pid 714)
+Compiled jquery.simplemodal.1.4.1.min.js  (0ms)  (pid 714)
+Compiled modernizr.min.js  (0ms)  (pid 714)
+Compiled respond.min.js  (0ms)  (pid 714)
+Compiled bootstrap.min.css  (0ms)  (pid 714)
+Compiled application.js  (5ms)  (pid 714)
+Compiled jquery.js  (3ms)  (pid 714)
+Compiled jquery_ujs.js  (0ms)  (pid 714)
+Compiled active_admin.js  (1ms)  (pid 714)
+Compiled active_admin/base.js  (1ms)  (pid 714)
+Compiled active_admin/vendor.js  (1ms)  (pid 714)
+Compiled advisors.js  (53ms)  (pid 714)
+Compiled highcharts.js  (0ms)  (pid 714)
+Compiled jquery-ui.js  (4ms)  (pid 714)
+Compiled plugins.js  (0ms)  (pid 714)
+Compiled rails.js  (0ms)  (pid 714)
+Compiled sessions.js  (0ms)  (pid 714)
+Compiled tips.js  (0ms)  (pid 714)
+Compiled users.js  (0ms)  (pid 714)
+Compiled application.css  (2ms)  (pid 714)

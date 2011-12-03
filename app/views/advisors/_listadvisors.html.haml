@@ -26,13 +26,4 @@
 							= "Add comments"
 						.clearfix
 
-	#commentform
-		= form_tag 'advisors/add_comment' do
-			= hidden_field_tag 'commentable', 'commentable', :value => 'Advisor'
-			= hidden_field_tag 'commentable_id', 'commentable_id'
-			.field.clearfix				
-				= label_tag 'Comment'
-				.input
-					= text_area_tag 'comment', nil, :class => 'largeText'
-			.actions
-				= submit_tag 'Save', :class => "btn primary"
+= render 'shared/comments', :locals => @advisors

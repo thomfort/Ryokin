@@ -17,3 +17,5 @@ $('.btnAddComment').click(function(e) {
 	$('#commentform').modal();
 	return false;
 });
+
+

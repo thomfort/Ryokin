@@ -1,19 +1,21 @@
 %h1 Log in
 
 = form_tag sessions_path do
-  .field.clearfix
-    = label_tag :email
-    = text_field_tag :email, params[:email]
-    
-  .field.clearfix
-    = label_tag :password
-    = password_field_tag :password
-    
-  .field.clearfix
-    = check_box_tag :remember_me, 1, params[:remember_me]
-    = label_tag :remember_me
-      
-  .actions
-    = submit_tag "Log in"
-    
-    
+	.clearfix
+		= label_tag :email
+		%div.input
+			= text_field_tag :email, params[:email]
+
+	.clearfix
+		= label_tag :password
+		%div.input
+			= password_field_tag :password
+
+	.clearfix
+		= label_tag :remember_me
+		%div.input
+			= check_box_tag :remember_me, 1, params[:remember_me]
+
+	.actions
+		= submit_tag "Log in"
+

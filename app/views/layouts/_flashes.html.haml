@@ -1,5 +1,5 @@
 #flash
   - flash.each do |key, value|
-    .alert-message{ :class => "#{key} success" }
+    .alert-message{ :class => "#{key} success alert-message", "data-alert" => 'alert' }
       = link_to 'x', '#', :class => 'close'
       %p= value
