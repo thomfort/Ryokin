@@ -32,25 +32,14 @@ namespace :scrapper do
 
       descriptions.each do |description|
         year = 0
-        rates_ar = Rate.new
-        rate_type = RateType.new
-        cat_rate_type = CategoryRateType.new
-
+        
         # Get existing rate
         #rate_exist = Rate.all(:joins => :category, :conditions => {:bank_id => 1, :section => 'taux fixe'})
 
         #puts 'RATES: ', rate_exist
 
         # Verif if hypotheque exist
-        cat_hypotheque = Category.find(:first, :conditions => {:name => 'hypotheque'})
-        if !cat_hypotheque
-          cat = Category.new 
-          cat.name = "hypotheque"
-          cat.save
-          cat_id = cat.id
-        else
-          cat_id = cat_hypotheque.id
-        end
+        cat = Category.find_or_create_by_name 'hypotheque'
 
         # Regex
         description =~ /(\d{1,3}) (mois|an|ans).*(\d{1,}\.\d{3,})/i
@@ -65,9 +54,9 @@ namespace :scrapper do
 
 
           rate_type = RateType.create(:name => type_name, :nb_month => year)
-          category_rate_type = CategoryRateType.create(:category_id => cat_id, :rate_type_id => rate_type.id)
+          category_rate_type = CategoryRateType.create(:category => cat, :rate_type => rate_type)
           rate = Rate.create(:bank_id => 1, 
-                             :category_rate_type_id => category_rate_type.id, 
+                             :category_rate_type => category_rate_type, 
                              :percent_rate => $3.to_f)
           
         end
@@ -150,7 +139,8 @@ namespace :scrapper do
 
           # Save Rates
           # rates_ar = Rate.new
-          begin
+          #go see Log4R
+          begin            
             puts "-- bankid = 3"
             rates_ar.bank_id = 3  # Desjardins(1), BNC(3)
 
